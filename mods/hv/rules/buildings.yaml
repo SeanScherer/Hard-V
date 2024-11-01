@@ -38,7 +38,7 @@ BASE:
 	Power:
 		Amount: 120
 	ProvidesPrerequisite@BuildingName:
-	ProvidesPrerequisite@Yuruki:
+	ProvidesPrerequisite@Synapol:
 		Prerequisite: structures.sc
 	TechPrerequisiteWithBots:
 		Prerequisite: bots
@@ -172,8 +172,8 @@ BASE2:
 	Inherits: BASE
 	RenderSprites:
 		Image: base2
-	-ProvidesPrerequisite@Yuruki:
-	ProvidesPrerequisite@Synapol:
+	-ProvidesPrerequisite@Synapol:
+	ProvidesPrerequisite@Yuruki:
 		Prerequisite: structures.yi
 	Buildable:
 		Prerequisites: outpost2, ~base.yi
@@ -210,13 +210,13 @@ OUTPOST:
 		Produces: Building
 		RequiresCondition: !base
 	ProvidesPrerequisite@BuildingName:
-	ProvidesPrerequisite@Yuruki:
+	ProvidesPrerequisite@Synapol:
 		Prerequisite: base.sc
 
 OUTPOST2:
 	Inherits: OUTPOST
-	-ProvidesPrerequisite@Yuruki:
-	ProvidesPrerequisite@Synapol:
+	-ProvidesPrerequisite@Synapol:
+	ProvidesPrerequisite@Yuruki:
 		Factions: yi
 		Prerequisite: base.yi
 	-Encyclopedia:

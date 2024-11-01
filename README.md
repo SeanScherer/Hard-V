@@ -1,6 +1,6 @@
-# HARD-V 
+# Hard-V 
 
-HARD-V is a mod of the RTS game OpenHV, both built on the [OpenRA](https://www.openra.net) engine and based (mostly) on the [Hard Vacuum](https://lostgarden.home.blog/2005/03/27/game-post-mortem-hard-vacuum/) artwork and designs by Daniel Cook. It aims to be a no compromise open content real-time strategy game. 
+Hard-V is a mod of the RTS game OpenHV, both built on the [OpenRA](https://www.openra.net) engine and based (mostly) on the [Hard Vacuum](https://lostgarden.home.blog/2005/03/27/game-post-mortem-hard-vacuum/) artwork and designs by Daniel Cook. It aims to be a no compromise open content real-time strategy game. 
 
 Set in the distant future where mega corporation do battle against each other, this standalone title comes with multiplayer (LAN and internet) support, non-cheating AI bots that will trash you in skirmish (unless you're very good) as well as an integrated map editor. It allows for spectators to watch matches and replays of games to be shared.
 

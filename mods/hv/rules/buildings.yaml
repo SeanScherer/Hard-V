@@ -34,6 +34,8 @@ BASE:
 		Range: 14c0
 		CircleWidth: 2
 		CircleBorderWidth: 4
+	GivesBuildableArea:
+		AreaTypes: building, energy
 	WithBuildingPlacedAnimation:
 	Power:
 		Amount: 120
@@ -258,6 +260,15 @@ GENERATOR:
 		Range: 2c0
 	Power:
 		Amount: 120
+	RequiresBuildableArea:
+		AreaTypes: energy
+		Adjacent: 2
+	GivesBuildableArea:
+		AreaTypes: building, energy
+	BaseProvider:
+		Range: 6c0
+		CircleWidth: 2
+		CircleBorderWidth: 4
 	Targetable:
 		TargetTypes: Ground, Structure
 	ScalePowerWithHealth:

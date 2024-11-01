@@ -37,6 +37,8 @@ BASE:
 	WithBuildingPlacedAnimation:
 	Power:
 		Amount: 120
+	ProvidesRadar:
+		RequiresCondition: !disabled && !build-incomplete && !beam-incomplete
 	ProvidesPrerequisite@BuildingName:
 	ProvidesPrerequisite@Synapol:
 		Prerequisite: structures.sc

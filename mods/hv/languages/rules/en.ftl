@@ -328,15 +328,16 @@ actor-generator =
 
     To restore power you can build more generators or as a short term action disable certain buildings by clicking the zap button and selected buildings to power down. With power lines cut the actions are more drastic: buildings will be unable to produce or contribute to the tech tree also canceling current production queues if they are effected.
 
-    Always plan ahead so you don't accidentally power down your base slowing down your progress. On the other hand it is a vital strategy to destroy enemy power plants to distract the enemy into power micromanagement, losen defenses temporarily and to put enemy on hold.
+    Always plan ahead so you don't accidentally power down your base slowing down your progress. On the other hand it is a vital strategy to destroy enemy power plants to distract the enemy into power micromanagement, loosen defenses temporarily and to put the enemies production on hold.
    .name = Power Plant
 
 actor-radar =
-   .description = Provides an overview
-    of the battlefield.
-      Calls in reinforcements.
+   .description = Provides guidance for Air Strikes or Drop Pods
+      Serves as backup Radar for that of the Base.
       Requires power to operate.
-   .encyclopedia = The radar enables a minimap on top right screen of the command interface. It also provides a larger amount of local vision around itself. As a tech building it is opening up the aerial branch of units. It also provides the first tier of support powers which can be an air strike or orbital drop pod reinforcements to be placed anywhere on the battlefield. For the air strike hold the mouse button and move the pointer to set the flight path.
+   .encyclopedia =  The radar dome provides guidance for aerial support - the first tier of support powers - which can be either an air strike or orbital drop pod reinforcements to be placed anywhere on the battlefield. For the air strike hold the mouse button and move the pointer to set the flight path. 
+
+    It also provides a large amount of local vision around itself. As a tech building it opens up the aerial branch of units.  The radar dome also serves to enable the minimap on the top right screen corner of the command interface in case the base building is lost.
    .name = Radar Dome
    .airstrikepower-name = Air Strike
    .airstrikepower-description = Deploy an aerial bombing run.

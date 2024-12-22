@@ -1,14 +1,14 @@
-ProductionTypeBuilding: E
+ProductionTypeBuilding: R
 	Description: Building Tab
 	Types: Production
 	Contexts: Player
 
-ProductionTypeDefense: R
+ProductionTypeDefense: T
 	Description: Defense Tab
 	Types: Production
 	Contexts: Player
 
-ProductionTypePod: T
+ProductionTypePod: Z
 	Description: Pod Tab
 	Types: Production
 	Contexts: Player
@@ -18,23 +18,52 @@ ProductionTypeUtility: K
 	Types: Production
 	Contexts: Player
 
-ProductionTypeTank: Y
+ProductionTypeTank: U
 	Description: Tank Tab
 	Types: Production
 	Contexts: Player
 
-ProductionTypeAircraft: U
+ProductionTypeAircraft: I
 	Description: Aircraft Tab
 	Types: Production
 	Contexts: Player
 
-ProductionTypeNaval: I
+ProductionTypeNaval: O
 	Description: Naval Tab
 	Types: Production
 	Contexts: Player
 
-ProductionTypeTrade: O
+ProductionTypeTrade: P
 	Description: Trade Tab
+	Types: Production
+	Contexts: Player
+
+Production01: Q   
+	Types: Production
+	Contexts: Player 
+Production02: W
+	Types: Production
+	Contexts: Player
+Production03: E
+	Types: Production
+	Contexts: Player
+Production04: A
+	Types: Production
+	Contexts: Player
+Production05: S
+	Types: Production
+	Contexts: Player
+Production06: D
+	Types: Production
+	Contexts: Player
+##### -> only Y for german (and similar) keyboards - international would be Z !
+Production07: Y
+	Types: Production
+	Contexts: Player
+Production08: X
+	Types: Production
+	Contexts: Player
+Production09: C
 	Types: Production
 	Contexts: Player
 
@@ -43,7 +72,7 @@ ToggleVariant: V
 	Types: Production
 	Contexts: Player
 
-PowerDown: X
+PowerDown: KP_2
 	Description: Power-down mode
 	Types: OrderGenerator
 	Contexts: Player

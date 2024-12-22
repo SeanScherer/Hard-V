@@ -13,12 +13,12 @@ ToSelection: HOME
 	Types: World
 	Contexts: Player, Spectator
 
-SelectAllUnits: Q
+SelectAllUnits: KP_7
 	Description: Select all combat units
 	Types: World
 	Contexts: Player, Spectator
 
-SelectUnitsByType: W
+SelectUnitsByType: KP_8
 	Description: Select units by type
 	Types: World
 	Contexts: Player, Spectator
@@ -33,12 +33,12 @@ Pause: PAUSE
 	Types: World
 	Contexts: Player, Spectator
 
-Sell: Z
+Sell: KP_1
 	Description: Sell mode
 	Types: OrderGenerator
 	Contexts: Player
 
-Repair: C
+Repair: KP_3
 	Description: Repair mode
 	Types: OrderGenerator
 	Contexts: Player
@@ -68,12 +68,12 @@ TakeScreenshot: P Ctrl
 	Types: World
 	Contexts: Menu, Player, Spectator
 
-AttackMove: A
+AttackMove: KP_4
 	Description: Attack Move
 	Types: Unit
 	Contexts: Player
 
-Stop: S
+Stop: KP_5
 	Description: Stop
 	Types: Unit
 	Contexts: Player
@@ -88,7 +88,7 @@ Deploy: F
 	Types: Unit
 	Contexts: Player
 
-Guard: D
+Guard: KP_6
 	Description: Guard
 	Types: Unit
 	Contexts: Player

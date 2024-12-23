@@ -1,45 +1,46 @@
 # License: CC-BY-SA-4.0
 
 Metadata:
-	Title: OpenHV
+	Title: mod-title
 	Version: {DEV_VERSION}
 	Website: https://www.openhv.net
 	WebIcon32: https://www.openhv.net/images/web/icon.png
-	WindowTitle: OpenHV
+	WindowTitle: mod-windowtitle
 
 ModCredits:
 	ModTabTitle: OpenHV
 	ModCreditsFile: hv|CREDITS
 
-Packages:
-	^EngineDir
-	$hv: hv
-	^EngineDir|mods/common: common
-	hv|bits
-	hv|bits/terrain
-	hv|bits/audio
-	hv|bits/audio/cc0
-	hv|bits/audio/cc-by-30
-	hv|bits/audio/cc-by-40
-	hv|bits/audio/graion
-	hv|bits/audio/dzierzan
-	hv|bits/audio/dzierzan/miner
-	hv|bits/audio/dzierzan/technician
-	hv|bits/audio/dzierzan/announcer
-	hv|bits/audio/dzierzan/stealthtank
-	hv|bits/audio/dzierzan/beast
-	hv|bits/audio/dzierzan/seed
-	hv|bits/audio/dzierzan/builder
-	hv|bits/audio/dzierzan/flamer
-	hv|bits/audio/dzierzan/broker
-	hv|bits/audio/dzierzan/jetpacker
-	hv|bits/audio/dzierzan/civilian
-	hv|bits/audio/dzierzan/shocker
-	hv|bits/audio/dzierzan/common
-	hv|bits/audio/dzierzan/assaulttank
-	hv|bits/audio/flamewh33l/
-	hv|bits/audio/timbeek/
-	hv|bits/audio/pd/
+FileSystem: DefaultFileSystem
+    Packages:
+		^EngineDir
+		$hv: hv
+		^EngineDir|mods/common: common
+		hv|bits
+		hv|bits/terrain
+		hv|bits/audio
+		hv|bits/audio/cc0
+		hv|bits/audio/cc-by-30
+		hv|bits/audio/cc-by-40
+		hv|bits/audio/graion
+		hv|bits/audio/dzierzan
+		hv|bits/audio/dzierzan/miner
+		hv|bits/audio/dzierzan/technician
+		hv|bits/audio/dzierzan/announcer
+		hv|bits/audio/dzierzan/stealthtank
+		hv|bits/audio/dzierzan/beast
+		hv|bits/audio/dzierzan/seed
+		hv|bits/audio/dzierzan/builder
+		hv|bits/audio/dzierzan/flamer
+		hv|bits/audio/dzierzan/broker
+		hv|bits/audio/dzierzan/jetpacker
+		hv|bits/audio/dzierzan/civilian
+		hv|bits/audio/dzierzan/shocker
+		hv|bits/audio/dzierzan/common
+		hv|bits/audio/dzierzan/assaulttank
+		hv|bits/audio/flamewh33l/
+		hv|bits/audio/timbeek/
+		hv|bits/audio/pd/
 
 MapFolders:
 	hv|maps: System
@@ -100,9 +101,7 @@ Chrome:
 Missions:
 	hv|missions.yaml
 
-Assemblies:
-	^BinDir|OpenRA.Mods.Common.dll
-	^BinDir|OpenRA.Mods.HV.dll
+Assemblies: OpenRA.Mods.Common.dll, OpenRA.Mods.HV.dll
 
 ChromeLayout:
 	hv|chrome/ingame.yaml
@@ -170,6 +169,8 @@ Translations:
 	hv|languages/rules/en.ftl
 	common|languages/chrome/en.ftl
 	hv|languages/chrome/en.ftl
+	common|languages/hotkeys/en.ftl
+	hv|languages/hotkeys/en.ftl
 
 Music:
 	hv|audio/music.yaml

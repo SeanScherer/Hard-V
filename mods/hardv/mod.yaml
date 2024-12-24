@@ -62,12 +62,13 @@ Rules:
 	hv|rules/weapons.yaml
 	hv|rules/bots.yaml
 	hv|rules/buildings.yaml
-	hv|rules/world.yaml
 	hv|rules/props.yaml
 	hv|rules/defaults.yaml
 	hv|rules/terrain.yaml
 	hv|rules/mothership.yaml
 	hv|rules/trade.yaml
+
+	hardv|rules/world.yaml
 
 Sequences:
 	hv|sequences/animals.yaml

@@ -18,3 +18,14 @@ OUTPOST3:
 		Factions: mx
 		Prerequisite: base.mx
 	-Encyclopedia:
+
+
+TRADER:
+
+	Buildable:
+ 		Prerequisites: ~base, factory, ~!structures.mx
+
+TECHCENTER:
+
+	Buildable:
+		Prerequisites: ~base, radar, ~!structures.mx

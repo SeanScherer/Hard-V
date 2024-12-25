@@ -1,5 +1,11 @@
 ## World
 
+### StartingUnits
+
+options-starting-units =
+    .base-only = Base only
+    .base-transport = Base + Transport
+
 
 ### Faction
 faction-maddox =

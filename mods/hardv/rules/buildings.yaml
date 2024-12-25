@@ -1,0 +1,20 @@
+# License: CC-BY-SA-4.0
+
+BASE3:
+	Inherits: BASE
+	RenderSprites:
+		Image: base2
+	-ProvidesPrerequisite@Yuruki:
+	ProvidesPrerequisite@Maddox:
+		Prerequisite: structures.mx
+	Buildable:
+		Prerequisites: outpost3, ~base.mx
+	-Encyclopedia:
+
+OUTPOST3:
+	Inherits: OUTPOST
+	-ProvidesPrerequisite@Yuruki:
+	ProvidesPrerequisite@Maddox:
+		Factions: mx
+		Prerequisite: base.mx
+	-Encyclopedia:

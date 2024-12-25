@@ -21,7 +21,7 @@
 	TerrainLighting:
 	CustomTerrainRenderer:
 
-
+## Used for a Critter
 	Locomotor@Creature:
 		Name: foot
 		TerrainSpeeds:
@@ -49,6 +49,7 @@
 			Blocked: 100
 				PathingCost: 300
 
+## Could do with a better name.. also, misusing this on the buildable / available vehicles atm
 	Locomotor@Infantry-Like:
 		Name: pod
 		Crushes: Shrubbery
@@ -78,6 +79,7 @@
 			Rail: 80
 			Blocked: 90
 
+# Need this for the Sea Monster :P 
 	Locomotor@Naval:
 		Name: naval
 		Crushes: Cube, Mine
@@ -87,6 +89,8 @@
 			Oceanic: 100
 			Rapids: 50
 
+
+## COPAC
 	Faction@Maddox:
 		Name: faction-maddox.name
 		InternalName: mx
@@ -99,6 +103,8 @@
 		Side: CoPac
 		Selectable: true
 		Description: faction-yuruki.description
+
+## SECFO
 	Faction@Haeundae:
 		Name: faction-haeundae.name
 		InternalName: hd
@@ -111,6 +117,14 @@
 		Side: SecFo
 		Selectable: true
 		Description: faction-synapol.description
+## Random choices of Faction
+	Faction@Random:
+		Name: faction-randomall.name
+		InternalName: Random
+		RandomFactionMembers: mx, yi, hd, sc
+		Side: Random
+		Description: faction-randomall.description
+
 	Faction@RandomCoPac:
 		Name: faction-randomcopac.name
 		InternalName: RandomCoPac
@@ -123,12 +137,7 @@
 		RandomFactionMembers: hd, sc
 		Side: Random
 		Description: faction-randomsecfo.description
-	Faction@Random:
-		Name: faction-randomall.name
-		InternalName: Random
-		RandomFactionMembers: mx, yi, hd, sc
-		Side: Random
-		Description: faction-randomall.description
+
 
 	PaletteFromGimpOrJascFile@Terrain:
 		Name: terrain
@@ -243,7 +252,7 @@
 		OverrideFullShroud: full
 		OverrideFullFog: full
 
-### Comments here no problem of course :P .
+### Comments here no problem of course :P . -> Nor elsewhere I just found out! (prob within traits is an issue?)
 
 
 World:

@@ -450,7 +450,7 @@ World:
 		Class: none
 		ClassName: options-starting-units.base-only
 		Factions: mx
-		BaseActor: base
+		BaseActor: base2
 	StartingUnits@BaseYI:
 		Class: none
 		ClassName: options-starting-units.base-only
@@ -460,7 +460,7 @@ World:
 		Class: none
 		ClassName: options-starting-units.base-only
 		Factions: hd
-		BaseActor: base2
+		BaseActor: base
 	StartingUnits@BaseSC:
 		Class: none
 		ClassName: options-starting-units.base-only

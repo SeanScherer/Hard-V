@@ -450,7 +450,7 @@ World:
 		Class: none
 		ClassName: options-starting-units.base-only
 		Factions: mx
-		BaseActor: base2
+		BaseActor: base3
 	StartingUnits@BaseYI:
 		Class: none
 		ClassName: options-starting-units.base-only
@@ -471,7 +471,7 @@ World:
 		Class: miner
 		ClassName: options-starting-units.base-transport
 		Factions: mx
-		BaseActor: base2
+		BaseActor: base3
 		SupportActors: miner
 	StartingUnits@MinerYI:
 		Class: miner

@@ -68,6 +68,7 @@ Rules:
 	hv|rules/mothership.yaml
 
 	hardv|rules/vehicles.yaml
+	hardv|rules/buildings.yaml
 	hardv|rules/world.yaml
 
 Sequences:

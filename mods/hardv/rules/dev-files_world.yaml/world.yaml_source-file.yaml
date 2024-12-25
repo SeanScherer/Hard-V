@@ -1,0 +1,61 @@
+# License: CC-BY-SA-4.0
+#
+#
+# Variables to replace:
+# offroad, Railwtf, roadSpeed, updown-ramp, mountainRamp, IceSpeed, vegetationSpeed
+#   90       ,   80  ,   100    ,  80       ,  70       , 80        , 50
+# If I want to keep all of those even, that is... :P .
+
+
+^BaseWorld:
+	AlwaysVisible:
+	ActorMap:
+	ScreenMap:
+	Selection:
+	ControlGroups:
+	MusicPlaylist:
+		VictoryMusic: the struggle loop
+		DefeatMusic: the story continues
+	TerrainGeometryOverlay:
+	TerrainTypeOverlay:
+	ResourceDensityOverlay:
+	NoBuildZone:
+		BlockedTerrainType: Blocked
+		MinerActorType: miner2
+		ResourceTypes: iron, gold
+	DebugVisualizations:
+	DebugOffsetOverlayManager:
+	TerrainLighting:
+	CustomTerrainRenderer:
+
+	Locomotor@Pod:
+		Name: pod
+		Crushes: Shrubbery
+		SharesCell: true
+		TerrainSpeeds:
+			Road:       on-road
+			Stone:      on-road
+			Tech:       on-road
+
+			Clear:      offroad
+			Ore:        offroad
+			Crater:     offroad
+			Dirt:       offroad
+			Grass:      offroad
+			Grass Pit:  offroad
+			Mountain:   offroad
+			Snow:       offroad
+			Red Snow:   offroad
+			Sand:       offroad
+			Black Sand: offroad
+
+			Sand Ramp:  updown-ramp
+			Black Sand Ramp: updown-ramp
+			Snow Ramp:  updown-ramp
+			Sand Ramp:  updown-ramp
+			Ice:        IceSpeed
+			Mountain Ramp: mountainRamp
+
+			Blocked:    offroad
+			Plant:      vegetationSpeed
+			Rail:       Railwtf

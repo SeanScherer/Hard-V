@@ -1,0 +1,129 @@
+# License: CC-BY-SA-4.0
+
+^BaseWorld:
+[ .. various initialisations (far as I can tell) copied over .. ]
+
+[ .. "foot" and "pod" locomotors copied over .. ]
+
+	Locomotor@Wheeled:
+		Name: wheeled
+		Crushes: Cube, Scrap, Mine
+		TerrainSpeeds:
+			Clear: 90
+			Ore: 90
+			Crater: 90
+			Dirt: 90
+			Grass: 90
+			Grass Ramp: 80
+			Grass Pit: 90
+			Road: 100
+			Mountain: 90
+			Mountain Ramp: 80
+			Ice: 80
+			Snow: 90
+			Snow Ramp: 80
+			Red Snow: 90
+			Sand: 90
+			Sand Ramp: 80
+			Black Sand: 90
+			Black Sand Ramp: 80
+			Stone: 100
+			Tech: 100
+			Rail: 80
+			Blocked: 90
+	Locomotor@Tracked:
+		Name: tracked
+		Crushes: Tree, Cube, Scrap, Pods, Mine
+		CrushDamageTypes: Crush
+		TerrainSpeeds:
+			Clear: 100
+			Ore: 100
+			Crater: 100
+			Dirt: 100
+			Grass: 100
+			Grass Ramp: 100
+			Grass Pit: 100
+			Road: 100
+			Mountain: 100
+			Mountain Ramp: 100
+			Ice: 100
+			Snow: 100
+			Snow Ramp: 100
+			Red Snow: 100
+			Sand: 100
+			Sand Ramp: 100
+			Black Sand: 100
+			Black Sand Ramp: 100
+			Stone: 100
+			Plant: 50
+			Tech: 100
+			Rail: 100
+			Blocked: 100
+
+[ .. "naval" locomotors copied over .. ]
+
+	Locomotor@Water:
+		Name: water
+		TerrainSpeeds:
+			Clear: 100
+			Ore: 100
+			Crater: 100
+			Snow: 100
+			Grass: 100
+			Mountain: 100
+			Red Snow: 100
+	Locomotor@Ferry:
+		Name: ferry
+		Crushes: Cube, Mine
+		TerrainSpeeds:
+			Littoral: 100
+			Pelagic: 100
+			Oceanic: 100
+			Rapids: 50
+			Shore: 75
+			IceCliff: 75
+[ .. Factions copied over .. ]
+
+[ .. Color Palettes copied over (lots) .. ]
+
+[ .. Shroud definition copied over ..]
+
+
+World:
+[ .. quite a few initialisations copied over .. ]
+
+[ .. Resource stuff (Ore and bridge shadows) copied over .. ]
+
+
+[ .. Forest stuff copied over .. ]
+
+[ .. variety of stuff copied over .. ]
+
+
+
+
+[ .. Multiplayer/Skirmish options copied over ..]
+
+	MapOptions:
+		TechLevelDropdownDisplayOrder: 2
+
+	TimeLimitManager:
+	VariedCostManager:
+		Multiplier: 110, 120
+
+
+[ .. more Multiplayer/Skirmish options copied over ..]
+
+
+[ .. start-units variants ..]
+
+
+[ .. bunch of initialisations ..]
+
+	CubeSpawner:
+		CheckboxDisplayOrder: 1
+		ValidGround: Clear, Crater, Road, Grass, Grass Pit, Mountain, Snow, Red Snow, Sand, Stone, Tech, Dirt
+		CubeActors: moneycube, revealcube, cloakcube, healcube, spawncube, duplicatecube
+		CubeActorShares: 90, 10, 40, 20, 90, 50
+
+[ .. mostly animation definitions copied over .. ]

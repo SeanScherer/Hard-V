@@ -1,0 +1,76 @@
+Check:
+
+
+^BaseWorld
+	AlwaysVisible:
+	ActorMap:
+	ScreenMap:
+	Selection:
+	ControlGroups:
+
+	TerrainGeometryOverlay:
+	TerrainTypeOverlay:
+	ResourceDensityOverlay:
+
+	DebugVisualizations:
+	DebugOffsetOverlayManager:
+	TerrainLighting:
+	CustomTerrainRenderer:
+
+	PaletteFromGimpOrJascFile@Terrain:
+		Name: terrain
+		Filename: bits/colors.pal
+		TransparentIndex: 255
+
+etc....
+
+etc...
+
+Lots of interesting palettes.
+
+These especially I think: !
+
+	PaletteFromPlayerPaletteWithAlpha@Cloak:
+		BaseName: cloak
+		BasePalette: green
+		Alpha: 0.55
+
+	FlashPaletteEffect@Nuke:
+		Type: Nuke
+
+	DesaturationPaletteEffect@Teleport:
+
+-------
+
+World:
+
+	ProductionQueueFromSelection:
+		ProductionPaletteWidget: PRODUCTION_PALETTE
+
+Might be something interesting I can do with: ?
+
+				bridge-shadow-left:
+				ResourceIndex: 3
+				TerrainType: BridgeShadow
+				MaxDensity: 1
+				AllowedTerrainTypes: *
+		etc.. 
+	CustomTerrainLayer: -> look into LaysTerrain :) ! - sounds - curious :P
+
+	ResourceRenderer  !!!
+
+	LiquidEdgeRenderer -> is this used? Where / when ?
+----------------------------------------------------------------------------------------------------
+
+Change:
+
+^BaseWorld
+*	MusicPlaylist:
+
+^World
+
+* 	ScrapOptions: --> Tanker/Transport uses this / has a call for it. So need to clean up / remove that before removing here :P ( guess I could set the option to locked down [and not visible?] I guess though :D ).
+*	MapBuildRadius
+*	MapOptions
+*
+

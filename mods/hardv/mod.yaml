@@ -54,9 +54,9 @@ Rules:
 	hv|rules/editor.yaml
 	hv|rules/player.yaml
 	hv|rules/pods.yaml
-	hv|rules/vehicles.yaml
+
 	hv|rules/aircraft.yaml
-	hv|rules/ships.yaml
+
 	hv|rules/animals.yaml
 	hv|rules/bonus.yaml
 	hv|rules/weapons.yaml
@@ -66,8 +66,8 @@ Rules:
 	hv|rules/defaults.yaml
 	hv|rules/terrain.yaml
 	hv|rules/mothership.yaml
-	hv|rules/trade.yaml
 
+	hardv|rules/vehicles.yaml
 	hardv|rules/world.yaml
 
 Sequences:
@@ -102,6 +102,8 @@ Cursors:
 
 Chrome:
 	hv|chrome.yaml
+
+	hardv|chrome.yaml
 
 Missions:
 	hv|missions.yaml
@@ -176,6 +178,8 @@ Translations:
 	hv|languages/chrome/en.ftl
 	common|languages/hotkeys/en.ftl
 	hv|languages/hotkeys/en.ftl
+
+	hardv|languages/rules/en.ftl
 
 Music:
 	hv|audio/music.yaml

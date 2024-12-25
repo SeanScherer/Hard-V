@@ -20,7 +20,9 @@
 	DebugOffsetOverlayManager:
 	TerrainLighting:
 	CustomTerrainRenderer:
-	Locomotor@Foot:
+
+
+	Locomotor@Creature:
 		Name: foot
 		TerrainSpeeds:
 			Clear: 100
@@ -46,9 +48,10 @@
 			Rail: 90
 			Blocked: 100
 				PathingCost: 300
-	Locomotor@Pod:
+
+	Locomotor@Infantry-Like:
 		Name: pod
-		Crushes: Cube, Scrap, Mine, Shrubbery
+		Crushes: Shrubbery
 		SharesCell: true
 		TerrainSpeeds:
 			Clear: 90
@@ -74,60 +77,7 @@
 			Tech: 100
 			Rail: 80
 			Blocked: 90
-	Locomotor@Wheeled:
-		Name: wheeled
-		Crushes: Cube, Scrap, Mine
-		TerrainSpeeds:
-			Clear: 90
-			Ore: 90
-			Crater: 90
-			Dirt: 90
-			Grass: 90
-			Grass Ramp: 80
-			Grass Pit: 90
-			Road: 100
-			Mountain: 90
-			Mountain Ramp: 80
-			Ice: 80
-			Snow: 90
-			Snow Ramp: 80
-			Red Snow: 90
-			Sand: 90
-			Sand Ramp: 80
-			Black Sand: 90
-			Black Sand Ramp: 80
-			Stone: 100
-			Tech: 100
-			Rail: 80
-			Blocked: 90
-	Locomotor@Tracked:
-		Name: tracked
-		Crushes: Tree, Cube, Scrap, Pods, Mine
-		CrushDamageTypes: Crush
-		TerrainSpeeds:
-			Clear: 100
-			Ore: 100
-			Crater: 100
-			Dirt: 100
-			Grass: 100
-			Grass Ramp: 100
-			Grass Pit: 100
-			Road: 100
-			Mountain: 100
-			Mountain Ramp: 100
-			Ice: 100
-			Snow: 100
-			Snow Ramp: 100
-			Red Snow: 100
-			Sand: 100
-			Sand Ramp: 100
-			Black Sand: 100
-			Black Sand Ramp: 100
-			Stone: 100
-			Plant: 50
-			Tech: 100
-			Rail: 100
-			Blocked: 100
+
 	Locomotor@Naval:
 		Name: naval
 		Crushes: Cube, Mine
@@ -136,44 +86,50 @@
 			Pelagic: 100
 			Oceanic: 100
 			Rapids: 50
-	Locomotor@Water:
-		Name: water
-		TerrainSpeeds:
-			Clear: 100
-			Ore: 100
-			Crater: 100
-			Snow: 100
-			Grass: 100
-			Mountain: 100
-			Red Snow: 100
-	Locomotor@Ferry:
-		Name: ferry
-		Crushes: Cube, Mine
-		TerrainSpeeds:
-			Littoral: 100
-			Pelagic: 100
-			Oceanic: 100
-			Rapids: 50
-			Shore: 75
-			IceCliff: 75
+
+	Faction@Maddox:
+		Name: faction-maddox.name
+		InternalName: mx
+		Side: CoPac
+		Selectable: true
+		Description: faction-maddox.description
 	Faction@Yuruki:
 		Name: faction-yuruki.name
 		InternalName: yi
-		Side: Corporations
+		Side: CoPac
 		Selectable: true
 		Description: faction-yuruki.description
+	Faction@Haeundae:
+		Name: faction-haeundae.name
+		InternalName: hd
+		Side: SecFo
+		Selectable: true
+		Description: faction-haeundae.description
 	Faction@Synapol:
 		Name: faction-synapol.name
 		InternalName: sc
-		Side: Corporations
+		Side: SecFo
 		Selectable: true
 		Description: faction-synapol.description
-	Faction@Random:
-		Name: faction-random.name
-		InternalName: Random
-		RandomFactionMembers: yi, sc
+	Faction@RandomCoPac:
+		Name: faction-randomcopac.name
+		InternalName: RandomCoPac
+		RandomFactionMembers: mx, yi
 		Side: Random
-		Description: faction-random.description
+		Description: faction-randomcopac.description
+	Faction@RandomSecFo:
+		Name: faction-randomsecfo.name
+		InternalName: RandomSecFo
+		RandomFactionMembers: hd, sc
+		Side: Random
+		Description: faction-randomsecfo.description
+	Faction@Random:
+		Name: faction-randomall.name
+		InternalName: Random
+		RandomFactionMembers: mx, yi, hd, sc
+		Side: Random
+		Description: faction-randomall.description
+
 	PaletteFromGimpOrJascFile@Terrain:
 		Name: terrain
 		Filename: bits/colors.pal
@@ -214,6 +170,7 @@
 		Filename: bits/colors.pal
 		AllowModifiers: false
 		TransparentIndex: 255
+
 	ColorPickerPalette:
 		Name: colorpicker
 		BasePalette: player
@@ -227,6 +184,7 @@
 		Name: shadow-decoration
 		Filename: bits/shadow-decoration.pal
 		TransparentIndex: 255
+
 	PaletteFromRGBA@Shadow:
 		Name: shadow
 		R: 0
@@ -268,18 +226,25 @@
 		B: 0
 		A: 140
 		TransparentIndex: 255
+
 	PaletteFromPlayerPaletteWithAlpha@Cloak:
 		BaseName: cloak
 		BasePalette: green
 		Alpha: 0.55
+
 	FlashPaletteEffect@Nuke:
 		Type: Nuke
+
 	DesaturationPaletteEffect@Teleport:
+
 	ShroudRenderer:
 		ShroudVariants: fow
 		FogVariants: fow
 		OverrideFullShroud: full
 		OverrideFullFog: full
+
+### Comments here no problem of course :P .
+
 
 World:
 	Inherits: ^BaseWorld
@@ -297,6 +262,7 @@ World:
 		ProductionPaletteWidget: PRODUCTION_PALETTE
 	CustomTerrainDebugOverlay:
 	CustomTerrainLayer:
+
 	UndergroundResourceLayer:
 		ResourceTypes:
 			gold:
@@ -344,6 +310,7 @@ World:
 				TerrainType: BridgeShadow
 				MaxDensity: 1
 				AllowedTerrainTypes: *
+
 	ResourceRenderer:
 		ResourceTypes:
 			gold:
@@ -377,6 +344,7 @@ World:
 			bridge-shadow-corner:
 				Sequence: corner
 				Palette: shadow-decoration
+
 	WithResourceAnimation:
 		Types: gold, iron
 		Ratio: 100
@@ -384,6 +352,8 @@ World:
 		Image: twinkle
 		Sequences: twinkle1, twinkle2, twinkle3, twinkle4, twinkle5, twinkle6, twinkle7, twinkle8
 		Palette: effect
+
+
 	ForestLayer:
 		FlameActor: treeflame
 		TransformedTerrain: Crater, Stone
@@ -445,6 +415,7 @@ World:
 			1300: 1460
 			1301: 1461
 			1302: 1462
+
 	LiquidTerrainLayer:
 	LiquidEdgeRenderer:
 		Image: waterflow
@@ -455,6 +426,8 @@ World:
 		Sequence: craters
 	WarheadDebugOverlay:
 	SpawnMapActors:
+
+
 	MapBuildRadius:
 		AllyBuildRadiusCheckboxDisplayOrder: 4
 		BuildRadiusCheckboxDisplayOrder: 5
@@ -463,52 +436,63 @@ World:
 		BuildRadiusCheckboxVisible: true
 	MapOptions:
 		ShortGameCheckboxDisplayOrder: 2
-		TechLevelDropdownDisplayOrder: 2
 		GameSpeedDropdownDisplayOrder: 3
+
 	ScrapOptions:
 		CheckboxDisplayOrder: 8
-	TimeLimitManager:
-	VariedCostManager:
-		Multiplier: 110, 120
-	CreateMapPlayers:
+
+	MapStartingLocations:
+		SeparateTeamSpawnsCheckboxDisplayOrder: 6
+	SpawnStartingUnits:
+		DropdownDisplayOrder: 1
+
+	StartingUnits@BaseMX:
+		Class: none
+		ClassName: options-starting-units.base-only
+		Factions: mx
+		BaseActor: base
 	StartingUnits@BaseYI:
 		Class: none
 		ClassName: options-starting-units.base-only
 		Factions: yi
 		BaseActor: base
+	StartingUnits@BaseHD:
+		Class: none
+		ClassName: options-starting-units.base-only
+		Factions: hd
+		BaseActor: base2
 	StartingUnits@BaseSC:
 		Class: none
 		ClassName: options-starting-units.base-only
 		Factions: sc
 		BaseActor: base2
+
+	StartingUnits@MinerMX:
+		Class: miner
+		ClassName: options-starting-units.base-transport
+		Factions: mx
+		BaseActor: base
+		SupportActors: miner
 	StartingUnits@MinerYI:
 		Class: miner
-		ClassName: options-starting-units.base-miner
+		ClassName: options-starting-units.base-transport
 		Factions: yi
 		BaseActor: base
+		SupportActors: miner
+	StartingUnits@MinerHD:
+		Class: miner
+		ClassName: options-starting-units.base-transport
+		Factions: hd
+		BaseActor: base2
 		SupportActors: miner
 	StartingUnits@MinerSC:
 		Class: miner
-		ClassName: options-starting-units.base-miner
+		ClassName: options-starting-units.base-transport
 		Factions: sc
 		BaseActor: base2
 		SupportActors: miner
-	StartingUnits@ScoutYI:
-		Class: scout
-		ClassName: options-starting-units.base-scout
-		Factions: yi
-		BaseActor: base
-		SupportActors: balloon
-	StartingUnits@ScoutSC:
-		Class: scout
-		ClassName: options-starting-units.base-scout
-		Factions: sc
-		BaseActor: base2
-		SupportActors: observer
-	MapStartingLocations:
-		SeparateTeamSpawnsCheckboxDisplayOrder: 6
-	SpawnStartingUnits:
-		DropdownDisplayOrder: 1
+
+	CreateMapPlayers:
 	PathFinder:
 	ValidateOrder:
 	DebugPauseState:
@@ -520,11 +504,7 @@ World:
 		PanelName: SKIRMISH_STATS
 	LoadWidgetAtGameStart:
 	ScriptTriggers:
-	CubeSpawner:
-		CheckboxDisplayOrder: 1
-		ValidGround: Clear, Crater, Road, Grass, Grass Pit, Mountain, Snow, Red Snow, Sand, Stone, Tech, Dirt
-		CubeActors: moneycube, revealcube, cloakcube, healcube, spawncube, duplicatecube
-		CubeActorShares: 90, 10, 40, 20, 90, 50
+
 	TerrainTileAnimation@LavaBubble:
 		Tiles: 323
 		Image: lavabubl

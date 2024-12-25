@@ -1,0 +1,15 @@
+# License: GPL-3.0+
+
+
+
+flags:
+	Inherits: ^Glyphs
+	Regions:
+		Random: 226, 241, 30, 15
+		RandomCoPac: 226, 241, 30, 15
+		RandomSecFo: 226, 241, 30, 15
+		spectator: 226, 241, 30, 15
+		yi: 226, 209, 30, 15
+		sc: 226, 225, 30, 15
+		mx: 226, 209, 30, 15
+		hd: 226, 225, 30, 15

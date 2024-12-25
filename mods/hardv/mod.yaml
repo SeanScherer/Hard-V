@@ -84,6 +84,8 @@ Sequences:
 	hv|sequences/terrain.yaml
 	hv|sequences/ships.yaml
 
+	hardv|sequences/buildings.yaml
+
 Weapons:
 	hv|weapons/explosions.yaml
 	hv|weapons/ballistics.yaml

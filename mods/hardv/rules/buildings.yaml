@@ -1,5 +1,7 @@
 # License: CC-BY-SA-4.0
 
+## Maddox Buildings
+
 BASE3:
 	Inherits: BASE
 	RenderSprites:
@@ -19,6 +21,53 @@ OUTPOST3:
 		Prerequisite: base.mx
 	-Encyclopedia:
 
+## might want to think about using -> 		Prerequisite: recfac.mx, but really, should prob share with Yuruki (and then use - Prerequisite: ~structures.copac, rather than mx)
+RECFAC:
+	Inherits: ^BaseBuilding
+	Inherits@Shape: ^2x2Shape
+	Inherits@Flame: ^BuildingFlame2
+	Inherits@Disable: ^DisableOnLowPowerOrPowerDown
+	Selectable:
+		Bounds: 2048, 2048
+	Tooltip:
+		Name: actor-dropzone.name
+	TooltipDescription:
+		Description: actor-dropzone.description
+	Buildable:
+		Queue: Building
+		Prerequisites: ~structures.mx
+		BuildPaletteOrder: 10
+		Description: actor-dropzone.description
+	Valued:
+		Cost: 500
+	ProvidesPrerequisite@BuildingName:
+	Building:
+		Footprint: x+x +++ x+x
+		Dimensions: 3,3
+	Targetable:
+		TargetTypes: Ground, Structure
+	Health:
+		HP: 80000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+		MinRange: 3c0
+		RevealGeneratedShroud: False
+		RequiresCondition: !disabled
+	RevealsShroud@Hacked:
+		Range: 3c0
+	RevealsShroud@Offline:
+		Range: 3c0
+		RevealGeneratedShroud: False
+		RequiresCondition: disabled
+	Power:
+		Amount: -40
+
+## TODO -> fixup tooltip name and description !
+## Ok, fixing up - I think there is some kind of difference between the neutral/capturable buildings and regular base ones for the selecatable bounds, but dunno exactly yet :/ ...
+
+### Disable the following (generic) buildings for Maddox
 
 TRADER:
 

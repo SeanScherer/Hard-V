@@ -1,27 +1,8 @@
 # License: CC-BY-SA-4.0
 
-## Maddox Buildings
 
-BASE3:
-	Inherits: BASE
-	RenderSprites:
-		Image: base2
-	-ProvidesPrerequisite@Yuruki:
-	ProvidesPrerequisite@Maddox:
-		Prerequisite: structures.mx
-	Buildable:
-		Prerequisites: outpost3, ~base.mx
-	-Encyclopedia:
 
-OUTPOST3:
-	Inherits: OUTPOST
-	-ProvidesPrerequisite@Yuruki:
-	ProvidesPrerequisite@Maddox:
-		Factions: mx
-		Prerequisite: base.mx
-	-Encyclopedia:
 
-## might want to think about using -> 		Prerequisite: recfac.mx, but really, should prob share with Yuruki (and then use - Prerequisite: ~structures.copac, rather than mx)
 RECFAC:
 	Inherits: ^BaseBuilding
 	Inherits@Shape: ^2x2Shape
@@ -66,6 +47,36 @@ RECFAC:
 
 ## TODO -> fixup tooltip name and description !
 ## Ok, fixing up - I think there is some kind of difference between the neutral/capturable buildings and regular base ones for the selecatable bounds, but dunno exactly yet :/ ...
+
+######################################################################################################
+
+## might want to think about using -> 		Prerequisite: recfac.mx, but really, should prob share with Yuruki (and then use - Prerequisite: ~structures.copac, rather than mx)
+# -> at the moment, effectively using structures.sc as placeholder for structures.copac, and structures.yi for structures.secfo ...
+
+## Unused as of now:
+
+## Maddox Buildings
+
+BASE3:
+	Inherits: BASE
+	RenderSprites:
+		Image: base2
+	-ProvidesPrerequisite@Yuruki:
+	ProvidesPrerequisite@Maddox:
+		Prerequisite: structures.mx
+	Buildable:
+		Prerequisites: outpost3, ~base.mx
+	-Encyclopedia:
+
+OUTPOST3:
+	Inherits: OUTPOST
+	-ProvidesPrerequisite@Yuruki:
+	ProvidesPrerequisite@Maddox:
+		Factions: mx
+		Prerequisite: base.mx
+	-Encyclopedia:
+
+
 
 ### Disable the following (generic) buildings for Maddox
 

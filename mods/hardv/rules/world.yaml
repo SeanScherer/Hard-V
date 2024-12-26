@@ -459,12 +459,12 @@ World:
 		Class: none
 		ClassName: options-starting-units.base-only
 		Factions: mx
-		BaseActor: base3
+		BaseActor: base2
 	StartingUnits@BaseYI:
 		Class: none
 		ClassName: options-starting-units.base-only
 		Factions: yi
-		BaseActor: base
+		BaseActor: base2
 	StartingUnits@BaseHD:
 		Class: none
 		ClassName: options-starting-units.base-only
@@ -474,19 +474,19 @@ World:
 		Class: none
 		ClassName: options-starting-units.base-only
 		Factions: sc
-		BaseActor: base2
+		BaseActor: base
 
 	StartingUnits@MinerMX:
 		Class: miner
 		ClassName: options-starting-units.base-transport
 		Factions: mx
-		BaseActor: base3
+		BaseActor: base2
 		SupportActors: miner
 	StartingUnits@MinerYI:
 		Class: miner
 		ClassName: options-starting-units.base-transport
 		Factions: yi
-		BaseActor: base
+		BaseActor: base2
 		SupportActors: miner
 	StartingUnits@MinerHD:
 		Class: miner

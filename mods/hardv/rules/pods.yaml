@@ -1,12 +1,19 @@
 # License: CC-BY-SA-4.0
 
+RIFLEMAN:
+	Buildable:
+		Queue: Pod
+		Description: actor-rifleman.description
+		Prerequisites: ~module.yi
+		BuildPaletteOrder: 10
+
 RIFLEMAN-TRACKED:
 	Inherits: ^Pod
 	Inherits@AutoTarget: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Pod
 		Description: actor-rifleman.description
-		Prerequisites: ~module
+		Prerequisites: ~module.sc
 		BuildPaletteOrder: 10
 	Encyclopedia:
 		Description: actor-rifleman.encyclopedia

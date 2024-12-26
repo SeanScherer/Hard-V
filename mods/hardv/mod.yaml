@@ -46,6 +46,8 @@ FileSystem: DefaultFileSystem
 		hv|bits/audio/timbeek/
 		hv|bits/audio/pd/
 
+		hardv|bits
+
 MapFolders:
 	hardv|maps: System
 	~^SupportDir|maps/hardv/{DEV_VERSION}: User
@@ -67,6 +69,7 @@ Rules:
 	hv|rules/terrain.yaml
 	hv|rules/mothership.yaml
 
+	hardv|rules/pods.yaml
 	hardv|rules/vehicles.yaml
 	hardv|rules/buildings.yaml
 	hardv|rules/world.yaml
@@ -84,6 +87,7 @@ Sequences:
 	hv|sequences/terrain.yaml
 	hv|sequences/ships.yaml
 
+	hardv|sequences/pods.yaml
 	hardv|sequences/buildings.yaml
 
 Weapons:

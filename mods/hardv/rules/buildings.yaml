@@ -1,5 +1,9 @@
 # License: CC-BY-SA-4.0
 
+## Player built buildings
+################################
+
+# Headquarters -> the Building you start the game with!
 
 BASE:
 	GrantConditionOnDamageState:
@@ -8,7 +12,14 @@ BASE:
 	ProvidesRadar:
 		RequiresCondition: !disabled && !build-incomplete && !beam-incomplete && !damaged
 
-RECFAC:
+### sort by Tech level or by function.. ? (both makes sense)
+
+##########################################
+### "Tier 1" / Basic Tech level buildings
+
+# Ordered Troops get dropped off here (and [parceled} buildings ? in future)
+
+AIRSUPPLYPAD:
 	Inherits: ^BaseBuilding
 	Inherits@Shape: ^2x2Shape
 	Inherits@Flame: ^BuildingFlame2
@@ -50,8 +61,148 @@ RECFAC:
 	Power:
 		Amount: -40
 
-## TODO -> fixup tooltip name and description !
+
+## TODO -> fixup tooltip names and descriptions !
 ## Ok, fixing up - I think there is some kind of difference between the neutral/capturable buildings and regular base ones for the selecatable bounds, but dunno exactly yet :/ ...
+
+
+
+# The Recruitment Facility - required for ordering basic (light) troops
+# Is also the basic Tier 1 building that unlocks many of the other basic/ Tier 1 buildings
+
+MODULE:
+	-RepairsUnits:
+
+FIELDREPAIR:
+	Inherits: ^BaseBuilding
+	Inherits@Shape: ^2x1Shape
+	Inherits@Flame: ^BuildingFlame
+	Inherits@Disable: ^DisableOnLowPowerOrPowerDown
+	Selectable:
+		Bounds: 2048, 2457, 0, -204
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 60
+		Prerequisites: module
+		Description: actor-fieldrepair.description
+	Valued:
+		Cost: 800
+	Tooltip:
+		Name: actor-fieldrepair.name
+	Encyclopedia:
+		Description: actor-fieldrepair.encyclopedia
+		Order: 40
+		Category: Buildings
+	Building:
+		Footprint: == xx
+		Dimensions: 2,2
+	HitShape:
+		UseTargetableCellsOffsets: true
+		TargetableOffsets: -512,0,0
+		Type: Rectangle
+			TopLeft: -1024, 0
+			BottomRight: 1024, 1024
+	Targetable:
+		TargetTypes: Ground, Structure
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 5c0
+		MinRange: 2c0
+		RevealGeneratedShroud: False
+		RequiresCondition: !disabled && !build-incomplete && !beam-incomplete
+	RevealsShroud@Offline:
+		Range: 2c0
+		RequiresCondition: disabled
+		RevealGeneratedShroud: False
+	RevealsShroud@Hacked:
+		Range: 2c0
+	Power:
+		Amount: -40
+	WithIdleOverlay@Lights:
+		Sequence: animation-lights
+		RequiresCondition: !disable-lights && !build-incomplete && !beam-incomplete && !disabled
+	GrantConditionOnDamageState@BrokenLights:
+		Condition: disable-lights
+		ValidDamageStates: Heavy, Critical
+	ProvidesPrerequisite@BuildingName:
+		Prerequisite: fieldrepair
+		RequiresCondition: !powerdown
+	RepairsUnits:
+		HpPerStep: 1000
+		Interval: 7
+		PlayerExperience: 15
+		StartRepairingNotification: Repairing
+		StartRepairingTextNotification: notifications-repairing
+		FinishRepairingNotification: UnitRepaired
+		FinishRepairingTextNotification: notification-unit-repaired
+		RequiresCondition: !powerdown
+
+WEAPONSFAC:
+	Inherits: ^BaseBuilding
+	Inherits@Shape: ^2x2Shape
+	Inherits@Flame: ^BuildingFlame
+	Inherits@Disable: ^DisableOnLowPowerOrPowerDown
+	Selectable:
+		Bounds: 2048, 2457, 0, -204
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 70
+		Prerequisites: module
+		Description: actor-weaponsfac.description
+	Encyclopedia:
+		Description: actor-weaponsfac.encyclopedia
+		Order: 40
+		Category: Buildings
+	Valued:
+		Cost: 1200
+	Tooltip:
+		Name: actor-weaponsfac.name
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Targetable:
+		TargetTypes: Ground, Structure
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 5c0
+		MinRange: 2c0
+		RevealGeneratedShroud: False
+		RequiresCondition: !disabled && !build-incomplete && !beam-incomplete
+	RevealsShroud@Offline:
+		Range: 2c0
+		RequiresCondition: disabled
+		RevealGeneratedShroud: False
+	RevealsShroud@Hacked:
+		Range: 2c0
+	Power:
+		Amount: -40
+	ProvidesPrerequisite@BuildingName:
+		Prerequisite: weaponsfac
+		RequiresCondition: !powerdown
+	WithIdleOverlay@animation:
+		Sequence: animation
+		RequiresCondition: !disable && !build-incomplete && !beam-incomplete
+
+##########################################
+### "Tier 2" / Intermediate Tech level buildings
+
+RADAR:
+	Buildable:
+		Prerequisites: module, ~structures.yi
+
+RADAR2:
+	Buildable:
+		Prerequisites: module, ~structures.sc
+
+##########################################
+### "Tier 3" / Advanced Tech level buildings
+
 
 ######################################################################################################
 

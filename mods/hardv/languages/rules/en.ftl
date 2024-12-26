@@ -82,3 +82,17 @@ faction-randomall =
    .name = Any
    .description = Random Corporation
     A random corporation will be chosen when the game starts.
+
+
+actor-fieldrepair =
+   .name = In-Field Repair Facility
+   .description = Provides capabilities for in-field repair
+      Requires power to operate.
+   .encyclopedia = The In-Field Repair facility enables the production of technicians at the RET-Center and repair vehicles at the Factory. Light vehicles in the immediate vicinity of the In-Field Repair Facility can bandage wounds and be provided some quick repairs.
+
+actor-weaponsfac =
+   .name = Weapons Facility
+   .description = Provides more advanced weapons
+      Requires power to operate.
+   .encyclopedia = The weapons facility enables the production of some more advanced units at the RET-Center and Factory
+

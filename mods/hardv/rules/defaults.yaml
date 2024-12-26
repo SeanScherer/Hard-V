@@ -1,0 +1,54 @@
+# License: CC-BY-SA-4.0
+
+
+^Pod:
+	Inherits: ^Vehicle
+	Mobile:
+		TurnSpeed: 100
+		Speed: 80
+		Locomotor: pod
+		Voice: Move
+	Voiced:
+		VoiceSet: GenericVoice2
+	Health:
+		HP: 15000
+	Armor:
+		Type: None
+	Passenger:
+		CargoType: Pod
+		Weight: 1
+	-Carryable:
+	-SpawnScrapOnDeath:
+	-FireWarheadsOnDeath:
+	WithDeathAnimation:
+		UseDeathTypeSuffix: false
+		DeathSequencePalette: green
+		FallbackSequence: die
+	Crushable:
+		CrushClasses: Pods
+		WarnProbability: 15
+	RevealsShroud:
+		Range: 4c0
+		MinRange: 2c0
+		RevealGeneratedShroud: False
+	RevealsShroud@Hacked:
+		Range: 2c0
+	DetectCloaked:
+		Range: 1c0
+	-Repairable:
+	RepairableNear:
+		RepairActors: fieldrepair
+		CloseEnough: 2c0
+	Targetable@Repair:
+		RequiresCondition: damaged
+		TargetTypes: DamagedPod
+	Selectable:
+		Bounds: 512,512,0,0
+	HitShape:
+		Type: Circle
+			Radius: 256
+	GrantConditionOnTerrain@Forest:
+		TerrainTypes: Plant
+		Condition: concealed
+	Cloak@Foliage:
+		RequiresCondition: concealed

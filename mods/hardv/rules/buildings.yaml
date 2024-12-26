@@ -1,7 +1,12 @@
 # License: CC-BY-SA-4.0
 
 
-
+BASE:
+	GrantConditionOnDamageState:
+		Condition: damaged
+		ValidDamageStates: Medium, Heavy, Critical
+	ProvidesRadar:
+		RequiresCondition: !disabled && !build-incomplete && !beam-incomplete && !damaged
 
 RECFAC:
 	Inherits: ^BaseBuilding

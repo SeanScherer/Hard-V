@@ -110,3 +110,56 @@ TANKER2:
 		Image: tanker2
 		FactionImages:
 			sc: tanker4
+
+### Note -> has Locomotor: foot atm! (cause I've not yet included all locomotors, 'cause want to do it properly yadda yadda :P).
+# As have the above vehicle, btw :P .
+MBT:
+	Inherits: ^TrackedVehicle
+	Inherits@AutoTarget: ^AutoTargetGroundAssaultMove
+	Valued:
+		Cost: 1700
+	Selectable:
+		Class: mbt
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Tooltip:
+		Name: actor-rhino.name
+	Buildable:
+		Queue: Tank
+		Description: actor-rhino.description
+		Prerequisites: ~factory.sc, weaponsfac
+		BuildPaletteOrder: 20
+	Encyclopedia:
+		Description: actor-rhino.encyclopedia
+		Order: 0
+		Category: Tanks
+	Mobile:
+		Locomotor: foot
+		TurnSpeed: 25
+		Speed: 95
+	Health:
+		HP: 46000
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 7c0
+		MinRange: 3c0
+		RevealGeneratedShroud: False
+	RevealsShroud@Hacked:
+		Range: 3c0
+	Turreted:
+		TurnSpeed: 25
+		Offset: -125,0,50
+	Armament:
+		Weapon: CannonYuruki
+		Recoil: 125
+		RecoilRecovery: 38
+		MuzzleSequence: muzzle
+		LocalOffset: 500,-50,-50
+	AttackTurreted:
+		PauseOnCondition: jammed
+		Voice: Attack
+	WithSpriteTurret:
+	WithMuzzleOverlay:
+	Voiced:
+		VoiceSet: AssaultTankVoice

@@ -117,9 +117,10 @@ actor-generator =
     Always plan ahead so you don't accidentally power down your base slowing down your progress. On the other hand it can be an effective strategy to destroy enemy power plants to distract the enemy into power micromanagement and to put the enemies production on hold.
 
 actor-module =
+   .name = RET-Center
    .description = Outfitting and Training for very light vehicles.
    .encyclopedia = The Recruitment, Equipment and Training Center is the assembly point for the smallest type of vehicle: the pods. They are very lightly armored and only contain one occupant, but provide some mobility and protection against harsh environments on planets with limited terraforming.
-   .name = RET-Center
+
 
 actor-fieldrepair =
    .name = In-Field Repair Facility
@@ -134,8 +135,8 @@ actor-weaponsfac =
    .encyclopedia = The weapons facility enables the production of some more advanced units at the RET-Center and Factory
 
 actor-factory =
-   .description = Assembly point for pre-produced Vehicles.
    .name = Vehicle Assembly Plant
+   .description = Assembly point for pre-produced Vehicles.
    .encyclopedia = The vehicle assembly plant is the source for all armored ground forces. Building multiple ones increases production speed. Right click on a factory to set a primary building whose teleportation pad shall be used for deployment. Righ-click on the ground to set a rally point for new vehicles to gather around.
 
 actor-radar =
@@ -155,6 +156,11 @@ actor-radar2 =
     Small team of light troops drop onto target location from orbit.
 
 actor-techcenter =
-   .description = Grants access to advanced weaponry.
    .name = Technology Download Center
+   .description = Grants access to advanced weaponry.
    .encyclopedia = Company policy is that classified technology can not be transported with unguarded colony ships. It has be wired in from an encrypted interstellar connection and stored in a secure facility. Only then the production facilities get access to the blue prints for machinery designed to resolve conflicts fast and efficient. This facilities requires a lot of power to keep the servers running. Power it down and access to restricted technology is temporarily lost.
+
+actor-rhino =
+   .name = Rhino
+   .description = Main Battle Tank
+   .encyclopedia = The Rhino has only a very limited field of fire due to its restricted Cannon rotation; but this has the benefit of enabling the fully enclosed hull (which a turret would prevent), which means it has fewer vulnerable points and better overall armour / protection.

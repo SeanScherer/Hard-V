@@ -89,54 +89,60 @@
 			Oceanic: 100
 			Rapids: 50
 
-
-## COPAC
+## My First Stab at a Side name was "CoPac"
+## COPAXCO
+## -> *Co*lonial *Pax*/Pacification *Co*alition
+## Alts: CoPax, PaxCo, PaCom + PaxCom (strictly speaking Pa[x]Co*M* -> cause Pacification of Colonies, Mutual agreement), 
 	Faction@Maddox:
 		Name: faction-maddox.name
 		InternalName: mx
-		Side: CoPac
+		Side: CoPaxCo
 		Selectable: true
 		Description: faction-maddox.description
 	Faction@Yuruki:
 		Name: faction-yuruki.name
 		InternalName: yi
-		Side: CoPac
+		Side: CoPaxCo
 		Selectable: true
 		Description: faction-yuruki.description
-
-## SECFO
-	Faction@Haeundae:
-		Name: faction-haeundae.name
-		InternalName: hd
-		Side: SecFo
+## First Stab at a Side name: SecFo
+## LUCAR
+## -> *Lu*na (Security [provision]) *Car*tel
+## Alts: LuNet, LyCar + LyNet, DynCar + DyNet (Dynamic Security [provision] Network) -> not bad either :P , 
+	Faction@DaeHan:
+		Name: faction-daehan.name
+		InternalName: dh
+		Side: LuCar
 		Selectable: true
-		Description: faction-haeundae.description
+		Description: faction-daehan.description
+    # Original name was: "Haeundae"
+    # Alts: DaeSan + DeaSam, Sam-Dae + SamDae
 	Faction@Synapol:
 		Name: faction-synapol.name
 		InternalName: sc
-		Side: SecFo
+		Side: LuCar
 		Selectable: true
 		Description: faction-synapol.description
 ## Random choices of Faction
 	Faction@Random:
 		Name: faction-randomall.name
 		InternalName: Random
-		RandomFactionMembers: mx, yi, hd, sc
+		RandomFactionMembers: mx, yi, dh, sc
 		Side: Random
 		Description: faction-randomall.description
 
-	Faction@RandomCoPac:
-		Name: faction-randomcopac.name
-		InternalName: RandomCoPac
+	Faction@RandomCoPaxCo:
+		Name: faction-randomcopaxco.name
+		InternalName: RandomCoPaxCo
 		RandomFactionMembers: mx, yi
 		Side: Random
-		Description: faction-randomcopac.description
-	Faction@RandomSecFo:
-		Name: faction-randomsecfo.name
-		InternalName: RandomSecFo
-		RandomFactionMembers: hd, sc
+		Description: faction-randomcopaxco.description
+	Faction@RandomLuCar:
+		Name: faction-randomlucar.name
+		InternalName: RandomLuCar
+		RandomFactionMembers: dh, sc
 		Side: Random
-		Description: faction-randomsecfo.description
+		Description: faction-randomlucar.description
 
 
 	PaletteFromGimpOrJascFile@Terrain:
@@ -465,10 +471,10 @@ World:
 		ClassName: options-starting-units.base-only
 		Factions: yi
 		BaseActor: base2
-	StartingUnits@BaseHD:
+	StartingUnits@BaseDH:
 		Class: none
 		ClassName: options-starting-units.base-only
-		Factions: hd
+		Factions: dh
 		BaseActor: base
 	StartingUnits@BaseSC:
 		Class: none
@@ -488,10 +494,10 @@ World:
 		Factions: yi
 		BaseActor: base2
 		SupportActors: miner
-	StartingUnits@MinerHD:
+	StartingUnits@MinerDH:
 		Class: miner
 		ClassName: options-starting-units.base-transport
-		Factions: hd
+		Factions: dh
 		BaseActor: base
 		SupportActors: miner
 	StartingUnits@MinerSC:

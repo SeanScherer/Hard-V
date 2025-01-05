@@ -38,9 +38,9 @@ faction-yuruki =
         - Field Generator
         - Orbital Railgun Strike
 
-faction-haeundae =
-   .name = Haeundae
-   .description = Haeundae Syndicate
+faction-daehan =
+   .name = DaeHan
+   .description = DaeHan Syndicate
 
 faction-synapol =
    .name = Synapol
@@ -68,15 +68,15 @@ faction-synapol =
         - Grand Howitzer
         - Thermonuclear Bomb
 
-faction-randomcopac =
-   .name = CoPac
-   .description = Random CoPac Corporation
-    A random CoPac corporation will be chosen when the game starts.
+faction-randomcopaxco =
+   .name = CoPaxCo
+   .description = Random CoPaxCo Corporation
+    A random CoPaxCo corporation will be chosen when the game starts.
 
-faction-randomsecfo =
-   .name = SecFo
-   .description = Random SecFo Corporation
-    A random SecFoc corporation will be chosen when the game starts.
+faction-randomlucar =
+   .name = LuCar
+   .description = Random LuCar Corporation
+    A random LuCar corporation will be chosen when the game starts.
 
 faction-randomall =
    .name = Any

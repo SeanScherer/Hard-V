@@ -46,3 +46,63 @@ RIFLEMAN-TRACKED:
 		Voice: Attack
 	WithMuzzleOverlay:
 		IgnoreOffset: true
+
+ROCKETEER:
+	Buildable:
+		Queue: Pod
+		Description: actor-rocketeer.description
+		Prerequisites: ~module.sc, weaponsfac
+		BuildPaletteOrder: 20
+
+TECHNICIAN:
+	Buildable:
+		Queue: Pod
+		Description: actor-technician.description
+		Prerequisites: ~module, fieldrepair
+		BuildPaletteOrder: 30
+
+
+
+# Want to use
+##################
+
+FLAMER:
+	Buildable:
+		Queue: Pod
+		Description: actor-flamer.description
+		Prerequisites: ~module.sc, factory, ~unbuildable
+		BuildPaletteOrder: 40
+
+SHOCKER:
+	Buildable:
+		Queue: Pod
+		Description: actor-shocker.description
+		Prerequisites: ~module.yi, weaponsfac
+		BuildPaletteOrder: 20
+
+
+
+
+
+# Disabled for the moment
+##########################################################
+
+MORTAR:
+	Buildable:
+		Prerequisites: ~module.yi, factory, ~unbuildable
+
+SNIPER:
+	Buildable:
+		Description: actor-sniper.description
+
+BROKER:
+	Buildable:
+		Description: actor-broker.description
+
+JETPACKER:
+	Buildable:
+		Prerequisites: ~module, techcenter, ~unbuildable
+
+BLASTER:
+	Buildable:
+		Description: actor-blaster.description

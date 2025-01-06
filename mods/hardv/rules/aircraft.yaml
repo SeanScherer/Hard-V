@@ -1,0 +1,74 @@
+# License: CC-BY-SA-4.0
+
+
+
+## CoPaxCo
+################################################
+
+DROPSHIP:
+	Buildable:
+		Prerequisites: ~starport.sc
+	-Cargo:
+	-WithCargoPipsDecoration:
+
+
+## LuCar (is this a good Side name :P ?)
+################################################
+
+
+JET:
+	Buildable:
+		Prerequisites: techcenter, ~starport.yi,
+        
+JET2:
+	Buildable:
+		Prerequisites: techcenter, ~starport.yi, ~unbuildable
+
+BANSHEE:
+	Buildable:
+		Prerequisites: techcenter, ~starport.yi
+
+
+## Insurrectionists
+################################################
+
+
+COPTER:
+	Buildable:
+		Prerequisites: ~starport.sc, ~unbuildable
+
+GUNSHIP:
+	Buildable:
+		Prerequisites: ~starport.yi, ~unbuildable
+
+CHOPPER:
+	Buildable:
+		Prerequisites: ~starport.sc, ~unbuildable
+
+BALLOON:
+	Buildable:
+		Prerequisites: ~starport.yi, ~unbuildable
+
+# Maybe ? or left over
+
+OBSERVER:
+	Buildable:
+		Prerequisites: ~starport.sc, ~unbuildable
+
+TURTLE:
+	Buildable:
+		Prerequisites: techcenter, ~starport.sc, ~unbuildable
+
+
+# Other
+###################################################
+
+#MOTHERSHIP:
+#	Buildable:
+#		Prerequisites: radar, trader, techcenter, ~starport.sc, ~unbuildable
+# -> can't disable, because merge gives an error (the original MOTHERSHIP as specified in aircraft.yaml, has two exits defined )
+
+BATTLESHIP:
+	Buildable:
+		Prerequisites: radar, trader, techcenter, ~starport.yi, ~unbuildable
+

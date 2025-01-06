@@ -69,10 +69,14 @@ Rules:
 	hv|rules/terrain.yaml
 	hv|rules/mothership.yaml
 
+
+	hardv|rules/world.yaml
+	hardv|rules/player.yaml
+
 	hardv|rules/pods.yaml
 	hardv|rules/vehicles.yaml
+	hardv|rules/aircraft.yaml
 	hardv|rules/buildings.yaml
-	hardv|rules/world.yaml
 
 Sequences:
 	hv|sequences/animals.yaml

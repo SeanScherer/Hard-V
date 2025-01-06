@@ -14,6 +14,11 @@ BASE:
 
 ### sort by Tech level or by function.. ? (both makes sense)
 
+
+GENERATOR:
+	Buildable:
+		BuildPaletteOrder: 30
+
 ##########################################
 ### "Tier 1" / Basic Tech level buildings
 
@@ -72,6 +77,13 @@ AIRSUPPLYPAD:
 
 MODULE:
 	-RepairsUnits:
+	Buildable:
+		BuildPaletteOrder: 30
+# MODULE2:
+#	Production:
+#		Produces: LTMV
+## Light Terrain Mobile Vehicles
+
 
 FIELDREPAIR:
 	Inherits: ^BaseBuilding
@@ -189,6 +201,14 @@ WEAPONSFAC:
 		Sequence: animation
 		RequiresCondition: !disable && !build-incomplete && !beam-incomplete
 
+FACTORY:
+	Buildable:
+		Prerequisites: module, ~structures.sc
+
+FACTORY2:
+	Buildable:
+		Prerequisites: module, ~structures.yi
+
 ##########################################
 ### "Tier 2" / Intermediate Tech level buildings
 
@@ -203,6 +223,23 @@ RADAR2:
 ##########################################
 ### "Tier 3" / Advanced Tech level buildings
 
+
+
+### Disabled (for now at least)
+#####################################
+
+
+TRADER:
+	Buildable:
+		Prerequisites: ~base, factory, ~unbuildable
+
+HARBOR:
+	Buildable:
+		Prerequisites: module, ~structures.sc, ~unbuildable
+
+HARBOR2:
+	Buildable:
+		Prerequisites: module, ~structures.yi, ~unbuildable
 
 ######################################################################################################
 
@@ -232,16 +269,3 @@ OUTPOST3:
 		Prerequisite: base.mx
 	-Encyclopedia:
 
-
-
-### Disable the following (generic) buildings for Maddox
-
-TRADER:
-
-	Buildable:
- 		Prerequisites: ~base, factory, ~!structures.mx
-
-TECHCENTER:
-
-	Buildable:
-		Prerequisites: ~base, radar, ~!structures.mx

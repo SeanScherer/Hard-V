@@ -582,8 +582,6 @@ MINER2:
 		Bounds: 2048, 3072, 0, 0
 	Tooltip:
 		Name: actor-miner2.name
-	Building:
-		UndeploySounds: miner_building_transform.ogg
 	Encyclopedia:
 		Description: actor-miner2.encyclopedia
 		Order: 50
@@ -621,6 +619,7 @@ MINER2:
 		RequiresBaseProvider: false
 		TerrainTypes: Clear, Road, Crater, Grass, Grass Pit, Ore, Mountain, Rock, Ice, Snow, Sand, Black Sand, Stone, Tech, Dirt, Blocked
 		AllowPlacementOnResources: true
+		UndeploySounds: miner_building_transform.ogg
 	RevealsShroud:
 		Range: 5c0
 		MinRange: 2c0

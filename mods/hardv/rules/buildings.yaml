@@ -1,5 +1,9 @@
 # License: CC-BY-SA-4.0
 
+MINER2:
+	Valued:
+		Cost: 200
+
 ## Player built buildings
 ################################
 
@@ -13,6 +17,8 @@ BASE:
 		ValidDamageStates: Medium, Heavy, Critical
 	ProvidesRadar:
 		RequiresCondition: !disabled && !build-incomplete && !beam-incomplete && !damaged
+	Valued:
+		Cost: 700
 
 # sort by Tech level or by function.. ? -> sort by position in build menu :P (which is kinda a mix of both :D ).
 
@@ -24,6 +30,8 @@ OUTPOST:
 		Queue: Building
 		Prerequisites: ~base, generator, ~structures.yi
 		Description: actor-outpost.description
+	Valued:
+		Cost: 200
 
 OUTPOST2:
 	Buildable:
@@ -37,10 +45,14 @@ OUTPOST2:
 STORAGE:
 	Buildable:
 		BuildPaletteOrder: 12
+	Valued:
+		Cost: 280
 
 GENERATOR:
 	Buildable:
 		BuildPaletteOrder: 13
+	Valued:
+		Cost: 60
 
 # Might give Generators a miss mid-to-long term for the Extractive-Corps / CoPaxCo... course, there might be a replacement building... (ordering Mining towers could have a spot here actually... - they need a spot in general ? :P ?! woopsie :P )
 
@@ -69,7 +81,7 @@ AIRSUPPLYPAD:
 		BuildPaletteOrder: 21
 		Description: actor-dropzone.description
 	Valued:
-		Cost: 500
+		Cost: 100
 	ProvidesPrerequisite@BuildingName:
 	Building:
 		Footprint: x+x +++ x+x
@@ -109,6 +121,9 @@ MODULE:
 	-RepairsUnits:
 	Buildable:
 		BuildPaletteOrder: 22
+	Valued:
+		Cost: 100
+
 # MODULE2:
 #	Production:
 #		Produces: LTMV
@@ -118,6 +133,8 @@ FACTORY:
 	Buildable:
 		Prerequisites: module, generator, ~structures.sc
 		BuildPaletteOrder: 23
+	Valued:
+		Cost: 200
 
 FACTORY2:
 	Buildable:
@@ -141,7 +158,7 @@ FIELDREPAIR:
 		Prerequisites: module, ~structures.sc
 		Description: actor-fieldrepair.description
 	Valued:
-		Cost: 800
+		Cost: 160
 	Tooltip:
 		Name: actor-fieldrepair.name
 	Encyclopedia:
@@ -211,6 +228,8 @@ RADAR:
 	Buildable:
 		BuildPaletteOrder: 32
 		Prerequisites: module, ~structures.yi
+	Valued:
+		Cost: 360
 
 RADAR2:
 	Buildable:
@@ -235,7 +254,7 @@ WEAPONSFAC:
 		Order: 40
 		Category: Buildings
 	Valued:
-		Cost: 1200
+		Cost: 240
 	Tooltip:
 		Name: actor-weaponsfac.name
 	Building:
@@ -268,7 +287,13 @@ WEAPONSFAC:
 		RequiresCondition: !disable && !build-incomplete && !beam-incomplete
 
 
+#####
 
+# Just to get all / some more changed values in
+
+STARPORT:
+	Valued:
+		Cost: 140
 
 
 ##########################################
@@ -279,14 +304,34 @@ WEAPONSFAC:
 ### Disabled (for now at least)
 #####################################
 
+TECHCENTER:
+	Buildable:
+		Queue: Building
+		Prerequisites: ~base, radar, unbuildable
+	Valued:
+		Cost: 200
+
+
 
 TRADER:
 	Buildable:
 		Prerequisites: ~base, factory, ~unbuildable
+	Valued:
+		Cost: 240
+
+ORESMELT:
+	Buildable:
+		Prerequisites: ~structures.sc, techcenter, ~unbuildable
+	Valued:
+		Cost: 240
+
+
 
 HARBOR:
 	Buildable:
 		Prerequisites: module, ~structures.sc, ~unbuildable
+	Valued:
+		Cost: 200
 
 HARBOR2:
 	Buildable:

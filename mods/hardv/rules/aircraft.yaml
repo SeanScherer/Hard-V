@@ -10,6 +10,8 @@ DROPSHIP:
 		Prerequisites: ~starport.sc
 	-Cargo:
 	-WithCargoPipsDecoration:
+	Valued:
+		Cost: 360
 
 
 ## LuCar (is this a good Side name :P ?)
@@ -19,14 +21,20 @@ DROPSHIP:
 JET:
 	Buildable:
 		Prerequisites: techcenter, ~starport.yi,
+	Valued:
+		Cost: 300
         
 JET2:
 	Buildable:
 		Prerequisites: techcenter, ~starport.yi, ~unbuildable
+	Valued:
+		Cost: 600
 
 BANSHEE:
 	Buildable:
 		Prerequisites: techcenter, ~starport.yi
+	Valued:
+		Cost: 600
 
 
 ## Insurrectionists
@@ -36,28 +44,40 @@ BANSHEE:
 COPTER:
 	Buildable:
 		Prerequisites: ~starport.sc, ~unbuildable
+	Valued:
+		Cost: 400
 
 GUNSHIP:
 	Buildable:
 		Prerequisites: ~starport.yi, ~unbuildable
+	Valued:
+		Cost: 400
 
 CHOPPER:
 	Buildable:
 		Prerequisites: ~starport.sc, ~unbuildable
+	Valued:
+		Cost: 360
 
 BALLOON:
 	Buildable:
 		Prerequisites: ~starport.yi, ~unbuildable
+	Valued:
+		Cost: 160
 
 # Maybe ? or left over
 
 OBSERVER:
 	Buildable:
 		Prerequisites: ~starport.sc, ~unbuildable
+	Valued:
+		Cost: 160
 
 TURTLE:
 	Buildable:
 		Prerequisites: techcenter, ~starport.sc, ~unbuildable
+	Valued:
+		Cost: 300
 
 
 # Other
@@ -71,4 +91,6 @@ TURTLE:
 BATTLESHIP:
 	Buildable:
 		Prerequisites: radar, trader, techcenter, ~starport.yi, ~unbuildable
+	Valued:
+		Cost: 2400
 

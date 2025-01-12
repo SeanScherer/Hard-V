@@ -6,6 +6,8 @@ RIFLEMAN:
 		Description: actor-rifleman.description
 		Prerequisites: ~module.yi
 		BuildPaletteOrder: 10
+	Valued:
+		Cost: 40
 
 RIFLEMAN-TRACKED:
 	Inherits: ^Pod
@@ -20,7 +22,7 @@ RIFLEMAN-TRACKED:
 		Order: 0
 		Category: Pods
 	Valued:
-		Cost: 200
+		Cost: 40
 	Tooltip:
 		Name: actor-rifleman.name
 	UpdatesPlayerStatistics:
@@ -53,6 +55,8 @@ ROCKETEER:
 		Description: actor-rocketeer.description
 		Prerequisites: ~module.sc, weaponsfac
 		BuildPaletteOrder: 20
+	Valued:
+		Cost: 90
 
 TECHNICIAN:
 	Buildable:
@@ -60,7 +64,8 @@ TECHNICIAN:
 		Description: actor-technician.description
 		Prerequisites: ~module, fieldrepair
 		BuildPaletteOrder: 30
-
+	Valued:
+		Cost: 200
 
 
 # Want to use
@@ -72,6 +77,8 @@ FLAMER:
 		Description: actor-flamer.description
 		Prerequisites: ~module.sc, factory, ~unbuildable
 		BuildPaletteOrder: 40
+	Valued:
+		Cost: 140
 
 SHOCKER:
 	Buildable:
@@ -79,7 +86,8 @@ SHOCKER:
 		Description: actor-shocker.description
 		Prerequisites: ~module.yi, weaponsfac
 		BuildPaletteOrder: 20
-
+	Valued:
+		Cost: 90
 
 
 
@@ -90,19 +98,29 @@ SHOCKER:
 MORTAR:
 	Buildable:
 		Prerequisites: ~module.yi, factory, ~unbuildable
+	Valued:
+		Cost: 60
 
 SNIPER:
 	Buildable:
 		Description: actor-sniper.description
+	Valued:
+		Cost: 200
 
 BROKER:
 	Buildable:
 		Description: actor-broker.description
+	Valued:
+		Cost: 280
 
 JETPACKER:
 	Buildable:
 		Prerequisites: ~module, techcenter, ~unbuildable
+	Valued:
+		Cost: 260
 
 BLASTER:
 	Buildable:
 		Description: actor-blaster.description
+	Valued:
+		Cost: 240

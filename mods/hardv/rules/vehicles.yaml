@@ -14,7 +14,7 @@ MINER:
 		Order: 20
 		Category: Utilities
 	Valued:
-		Cost: 1100
+		Cost: 220
 	Tooltip:
 		Name: actor-miner.name
 	Selectable:
@@ -65,7 +65,7 @@ TANKER1:
 		Prerequisites: ~disabled
 		Description: actor-tanker1.description
 	Valued:
-		Cost: 1000
+		Cost: 200
 	Tooltip:
 		Name: actor-tanker1.name
 	Selectable:
@@ -113,11 +113,16 @@ TANKER2:
 
 ### Note -> has Locomotor: foot atm! (cause I've not yet included all locomotors, 'cause want to do it properly yadda yadda :P).
 # As have the above vehicle, btw :P .
+
+## don't think this entry should be here in full :P ...
+
+# Valued needs to stick though! 
+
 MBT:
 	Inherits: ^TrackedVehicle
 	Inherits@AutoTarget: ^AutoTargetGroundAssaultMove
 	Valued:
-		Cost: 1700
+		Cost: 340
 	Selectable:
 		Class: mbt
 	UpdatesPlayerStatistics:

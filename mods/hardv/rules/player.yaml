@@ -3,3 +3,11 @@
 Player:
 	ClassicProductionQueue@Pod:
 		PayUpFront: true
+		DisallowPaused: true
+
+#	ClassicProductionQueue@Building:
+#	ClassicProductionQueue@Defense:
+#	ClassicProductionQueue@Utility:
+#	ClassicProductionQueue@Tank:
+#	ClassicProductionQueue@Trade:
+#	ClassicProductionQueue@Aircraft:

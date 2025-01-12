@@ -3,6 +3,8 @@
 ## Player built buildings
 ################################
 
+# Top row (from left to right, three spots) - Tier "0"
+
 # Headquarters -> the Building you start the game with!
 
 BASE:
@@ -12,17 +14,43 @@ BASE:
 	ProvidesRadar:
 		RequiresCondition: !disabled && !build-incomplete && !beam-incomplete && !damaged
 
-### sort by Tech level or by function.. ? (both makes sense)
+# sort by Tech level or by function.. ? -> sort by position in build menu :P (which is kinda a mix of both :D ).
 
+# Make outposts hold a slot (and buildable) at the BASE / HeadQuarters:
+
+OUTPOST:
+	Buildable:
+		BuildPaletteOrder: 11
+		Queue: Building
+		Prerequisites: ~base, generator, ~structures.yi
+		Description: actor-outpost.description
+
+OUTPOST2:
+	Buildable:
+		BuildPaletteOrder: 11
+		Queue: Building
+		Prerequisites: ~base, generator, ~structures.sc
+		Description: actor-outpost.description
+
+# Refinery
+
+STORAGE:
+	Buildable:
+		BuildPaletteOrder: 12
 
 GENERATOR:
 	Buildable:
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 13
+
+# Might give Generators a miss mid-to-long term for the Extractive-Corps / CoPaxCo... course, there might be a replacement building... (ordering Mining towers could have a spot here actually... - they need a spot in general ? :P ?! woopsie :P )
 
 ##########################################
 ### "Tier 1" / Basic Tech level buildings
 
-# Ordered Troops get dropped off here (and [parceled} buildings ? in future)
+# Middle / Second Row
+
+# OrbitalPad - coming to like "LandingZone" right now :) .
+# Desc.: Ordered Troops get dropped off here (and [parceled} buildings ? in future)
 
 AIRSUPPLYPAD:
 	Inherits: ^BaseBuilding
@@ -37,8 +65,8 @@ AIRSUPPLYPAD:
 		Description: actor-dropzone.description
 	Buildable:
 		Queue: Building
-		Prerequisites: ~structures.mx
-		BuildPaletteOrder: 10
+		Prerequisites: ~structures.sc
+		BuildPaletteOrder: 21
 		Description: actor-dropzone.description
 	Valued:
 		Cost: 500
@@ -72,18 +100,33 @@ AIRSUPPLYPAD:
 
 
 
-# The Recruitment Facility - required for ordering basic (light) troops
-# Is also the basic Tier 1 building that unlocks many of the other basic/ Tier 1 buildings
+
+# RET-Center / Recruitment + Recreation Facility
+# Desc.: The Recruitment Facility - required for ordering basic (light) troops
+# Its also the basic Tier 1 building that unlocks many of the other basic/ Tier 1 buildings
 
 MODULE:
 	-RepairsUnits:
 	Buildable:
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 22
 # MODULE2:
 #	Production:
 #		Produces: LTMV
 ## Light Terrain Mobile Vehicles
 
+FACTORY:
+	Buildable:
+		Prerequisites: module, generator, ~structures.sc
+		BuildPaletteOrder: 23
+
+FACTORY2:
+	Buildable:
+		Prerequisites: module, generator, ~structures.yi
+		BuildPaletteOrder: 23
+
+# Bottom / Third row
+
+# Sorted - essentially by cost (and perhaps by secondarily by belligerency :P)
 
 FIELDREPAIR:
 	Inherits: ^BaseBuilding
@@ -94,8 +137,8 @@ FIELDREPAIR:
 		Bounds: 2048, 2457, 0, -204
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 60
-		Prerequisites: module
+		BuildPaletteOrder: 31
+		Prerequisites: module, ~structures.sc
 		Description: actor-fieldrepair.description
 	Valued:
 		Cost: 800
@@ -152,6 +195,29 @@ FIELDREPAIR:
 		FinishRepairingTextNotification: notification-unit-repaired
 		RequiresCondition: !powerdown
 
+# To add - missing Coms-Center (ie "tier 1 Radar site") here.
+#	Buildable:
+#		BuildPaletteOrder: 32
+#
+
+## Placeholder: Radar (or Radar2)
+
+
+
+##########################################
+### "Tier 2" / Intermediate Tech level buildings
+
+RADAR:
+	Buildable:
+		BuildPaletteOrder: 32
+		Prerequisites: module, ~structures.yi
+
+RADAR2:
+	Buildable:
+		Prerequisites: module, ~structures.sc
+
+## Only those two were "Tier 2" -> move section again later :P !
+
 WEAPONSFAC:
 	Inherits: ^BaseBuilding
 	Inherits@Shape: ^2x2Shape
@@ -161,8 +227,8 @@ WEAPONSFAC:
 		Bounds: 2048, 2457, 0, -204
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 70
-		Prerequisites: module
+		BuildPaletteOrder: 33
+		Prerequisites: module, generator, ~structures.sc
 		Description: actor-weaponsfac.description
 	Encyclopedia:
 		Description: actor-weaponsfac.encyclopedia
@@ -201,24 +267,9 @@ WEAPONSFAC:
 		Sequence: animation
 		RequiresCondition: !disable && !build-incomplete && !beam-incomplete
 
-FACTORY:
-	Buildable:
-		Prerequisites: module, ~structures.sc
 
-FACTORY2:
-	Buildable:
-		Prerequisites: module, ~structures.yi
 
-##########################################
-### "Tier 2" / Intermediate Tech level buildings
 
-RADAR:
-	Buildable:
-		Prerequisites: module, ~structures.yi
-
-RADAR2:
-	Buildable:
-		Prerequisites: module, ~structures.sc
 
 ##########################################
 ### "Tier 3" / Advanced Tech level buildings
@@ -248,6 +299,8 @@ HARBOR2:
 
 ## Unused as of now:
 
+# Mostly cause of the PiTa way things are set up. Ah, I could add structures.copaxco -> but then I'd need to add that everywhere, and remove structures.sc -> so it works out the same as renaming, essentially :P.
+
 ## Maddox Buildings
 
 BASE3:
@@ -258,14 +311,21 @@ BASE3:
 	ProvidesPrerequisite@Maddox:
 		Prerequisite: structures.mx
 	Buildable:
-		Prerequisites: outpost3, ~base.mx
+		BuildLimit: 1
+		Prerequisites: outpost3, ~base.mx, ~!structures.mx
 	-Encyclopedia:
 
 OUTPOST3:
 	Inherits: OUTPOST
+	RenderSprites:
+		Image: outpost2
 	-ProvidesPrerequisite@Yuruki:
 	ProvidesPrerequisite@Maddox:
 		Factions: mx
 		Prerequisite: base.mx
+	Buildable:
+		BuildPaletteOrder: 11
+		Queue: Building
+		Prerequisites: ~base, generator, ~structures.mx
+		Description: actor-outpost.description
 	-Encyclopedia:
-

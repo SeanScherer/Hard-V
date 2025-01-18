@@ -1,54 +1,32 @@
 # License: CC-BY-SA-4.0
 
+# Note: the ^template thing works a bit funky / ends up being processed a little differently to how other "hot-editing" of existing units works (it feels like the templates are loaded by units in one pass, and only after that they get adapted -> ie effectively no change :P.
+# Try working round this by making my own templates that load other templates :P ? (and then using those templates for my units). See if that works...
+#Old note:
+# z_messing-with-defaults-I-think-is-useless_as-not-loaded-all-^template-style-things-have-already-been-loaded-by-units-perhaps-ah-maybe-if-only-one-defaults+templates-file-existed-ie-don't-load-the-base-games...
 
 ^Pod:
-	Inherits: ^Vehicle
-	Mobile:
-		TurnSpeed: 100
-		Speed: 80
-		Locomotor: pod
-		Voice: Move
-	Voiced:
-		VoiceSet: GenericVoice2
-	Health:
-		HP: 15000
-	Armor:
-		Type: None
-	Passenger:
-		CargoType: Pod
-		Weight: 1
-	-Carryable:
-	-SpawnScrapOnDeath:
-	-FireWarheadsOnDeath:
-	WithDeathAnimation:
-		UseDeathTypeSuffix: false
-		DeathSequencePalette: green
-		FallbackSequence: die
-	Crushable:
-		CrushClasses: Pods
-		WarnProbability: 15
-	RevealsShroud:
-		Range: 4c0
-		MinRange: 2c0
-		RevealGeneratedShroud: False
-	RevealsShroud@Hacked:
-		Range: 2c0
-	DetectCloaked:
-		Range: 1c0
-	-Repairable:
+	-RepairableNear:
 	RepairableNear:
 		RepairActors: fieldrepair
 		CloseEnough: 2c0
-	Targetable@Repair:
-		RequiresCondition: damaged
-		TargetTypes: DamagedPod
-	Selectable:
-		Bounds: 512,512,0,0
-	HitShape:
-		Type: Circle
-			Radius: 256
-	GrantConditionOnTerrain@Forest:
-		TerrainTypes: Plant
-		Condition: concealed
-	Cloak@Foliage:
-		RequiresCondition: concealed
+
+# An alternative (or perhaps - complementary) way to do it would be so:
+
+# ^LTMV:
+#	Inherits: ^Pod
+#	-RepairableNear:
+#	RepairableNear:
+#		RepairActors: fieldrepair
+#		CloseEnough: 2c0
+
+
+## In which case, don't forget to also change:
+#Would need in /rules/pods.yaml -
+
+#RIFLEMAN-TRACKED:
+#	Inherits: ^LTMV
+#..
+#.
+#.
+#..

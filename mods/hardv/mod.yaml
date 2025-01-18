@@ -73,6 +73,8 @@ Rules:
 	hardv|rules/world.yaml
 	hardv|rules/player.yaml
 
+	hardv|rules/defaults.yaml
+
 	hardv|rules/pods.yaml
 	hardv|rules/vehicles.yaml
 	hardv|rules/aircraft.yaml

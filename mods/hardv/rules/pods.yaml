@@ -48,6 +48,10 @@ RIFLEMAN-TRACKED:
 		Voice: Attack
 	WithMuzzleOverlay:
 		IgnoreOffset: true
+	-RepairableNear:
+	RepairableNear:
+		RepairActors: fieldrepair
+		CloseEnough: 2c0
 
 ROCKETEER:
 	Buildable:
@@ -92,7 +96,7 @@ SHOCKER:
 
 
 
-# Disabled for the moment
+# Disabled for the moment - not exactly, right mate :P ? (at least not all of them...)
 ##########################################################
 
 MORTAR:

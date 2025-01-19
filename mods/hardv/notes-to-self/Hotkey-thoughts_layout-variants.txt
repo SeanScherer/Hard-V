@@ -1,0 +1,40 @@
+ 
+Compromise 
+ 
+ Q -> Infantry 	| W -> Vehicles/Armour | E -> Air
+ -------------------------------------------------
+ A -> Attack 	| S -> Scatter		| D -> Deploy
+ -------------------------------------------------
+ Y/Z -> Build. 	| X -> Adv. Build.	| C -> Stop (ie "Cancel")
+ 
+ 
+ --> R,T,Z - F,G,H - V,B,N as palette Grid (for selecting build choices).
+ 
+ 
+traditional (leaning)
+
+ Q -> Infantry 	| W -> Vehicles/Armour | E -> Air
+ -------------------------------------------------
+ A -> Attack 	| S -> Stop		| D -> Deploy
+ -------------------------------------------------
+ Y/Z -> Build. 	| X -> Scatter		| C -> Adv. Buildings
+
+
+more traditonal
+
+-> Swapout Buildings to top, Vehicles and Air to bottom.
+
+
+
+
+ Most traditional (or merge with above
+ 
+  Q -> Build. 	| W -> Adv. Buildings | E -> Infantry | R -> Vehicles/Armour
+ -------------------------------------------------
+ A -> Attack 	| S -> Stop		| D -> Guard	| F -> Deploy
+ -------------------------------------------------
+ Y/Z -> Air	| X -> ??		| C -> Whatever.. | V -> Dunno... 
+ 
+ -> last row, prob re-dedicate to repair / sell / power-down ??
+ 
+ 

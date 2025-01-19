@@ -93,12 +93,14 @@
 ## COPAXCO
 ## -> *Co*lonial *Pax*/Pacification *Co*alition
 ## Alts: CoPax, PaxCo, PaCom + PaxCom (strictly speaking Pa[x]Co*M* -> cause Pacification of Colonies, Mutual agreement), 
-	Faction@Maddox:
-		Name: faction-maddox.name
+#
+	Faction@Maddock:
+		Name: faction-maddock.name
 		InternalName: mx
 		Side: CoPaxCo
 		Selectable: true
-		Description: faction-maddox.description
+		Description: faction-maddock.description
+    ## My initial name for the faction was "Maddox" (might change back)
 	Faction@Yuruki:
 		Name: faction-yuruki.name
 		InternalName: yi
@@ -109,14 +111,16 @@
 ## LUCAR
 ## -> *Lu*na (Security [provision]) *Car*tel
 ## Alts: LuNet, LyCar + LyNet, DynCar + DyNet (Dynamic Security [provision] Network) -> not bad either :P , 
-	Faction@DaeHan:
-		Name: faction-daehan.name
+	Faction@TriStar:
+		Name: faction-tristar.name
 		InternalName: dh
 		Side: LuCar
 		Selectable: true
-		Description: faction-daehan.description
+		Description: faction-tristar.description
     # Original name was: "Haeundae"
     # Alts: DaeSan + DeaSam, Sam-Dae + SamDae
+    # last version before current: DaeHan.
+    # (came upon "Tristar" cause that's actually what "Samsung" means :P)
 	Faction@Synapol:
 		Name: faction-synapol.name
 		InternalName: sc

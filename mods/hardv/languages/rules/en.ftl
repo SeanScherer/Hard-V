@@ -8,9 +8,9 @@ options-starting-units =
 
 
 ### Faction
-faction-maddox =
-   .name = Maddox
-   .description = Maddox Incorporated
+faction-maddock =
+   .name = Maddock
+   .description = Maddock Incorporated
 
 
 faction-yuruki =
@@ -38,9 +38,9 @@ faction-yuruki =
         - Field Generator
         - Orbital Railgun Strike
 
-faction-daehan =
-   .name = DaeHan
-   .description = DaeHan Syndicate
+faction-tristar =
+   .name = TriStar
+   .description = TriStar Syndicate
 
 faction-synapol =
    .name = Synapol

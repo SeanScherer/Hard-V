@@ -353,7 +353,7 @@ BASE3:
 	RenderSprites:
 		Image: base2
 	-ProvidesPrerequisite@Yuruki:
-	ProvidesPrerequisite@Maddox:
+	ProvidesPrerequisite@Maddock:
 		Prerequisite: structures.mx
 	Buildable:
 		BuildLimit: 1
@@ -365,7 +365,7 @@ OUTPOST3:
 	RenderSprites:
 		Image: outpost2
 	-ProvidesPrerequisite@Yuruki:
-	ProvidesPrerequisite@Maddox:
+	ProvidesPrerequisite@Maddock:
 		Factions: mx
 		Prerequisite: base.mx
 	Buildable:

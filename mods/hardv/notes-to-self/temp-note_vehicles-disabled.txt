@@ -1,0 +1,47 @@
+Add prerequisites:
+
+* MBT -> weaponsfac
+
+* MBT2 -> weaponsfac
+
+* AATANK -> weaponsfac
+
+* AATANK2 -> weaponsfac
+
+
+* BUILDER (+2) -> Generator (was 'bout to write "questionable", but then remembered -> outpost I'd view as a grid connection, so first need to some grid-producer to connect to :D)
+
+These vehicles were disabled in the "bites the dust" branch:
+
+
+APC		-> possible flavour unit? (CoPaxCo)
+
+ARTILLERY
+
+RADARTANK
+
+MINELAYER
+
+RAILGUNTANK	-> possible flavour unit? (CoPaxCo)
+
+LIGHTNINGTANK
+
+STEALTHTANK
+
+ECMTANK
+
+BUILDER
+
+BUILDER2
+
+MISSLETANK	-> CoPaxCo
+
+HACKERTANK
+
+BUGGY		-> go to insurrectionists
+
+BIKE		-> possibly LuCar
+
+CVIT		-> this is money transport I think?
+
+--> ie all of the others :P 

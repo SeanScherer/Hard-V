@@ -69,6 +69,7 @@ Rules:
 	hv|rules/terrain.yaml
 	hv|rules/mothership.yaml
 
+	hv|rules/world.yaml
 
 	hardv|rules/world.yaml
 	hardv|rules/player.yaml

@@ -73,10 +73,10 @@ faction-randomcopaxco =
    .description = Random CoPaxCo Corporation
     A random CoPaxCo corporation will be chosen when the game starts.
 
-faction-randomlucar =
-   .name = LuCar
-   .description = Random LuCar Corporation
-    A random LuCar corporation will be chosen when the game starts.
+faction-randomcalun =
+   .name = CaLun
+   .description = Random CaLun Corporation
+    A random CaLun corporation will be chosen when the game starts.
 
 faction-randomall =
    .name = Any

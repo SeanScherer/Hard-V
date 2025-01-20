@@ -45,13 +45,14 @@
 		Selectable: true
 		Description: faction-yuruki.description
 ## First Stab at a Side name: SecFo
-## LUCAR
+## Second stab: LUCAR
 ## -> *Lu*na (Security [provision]) *Car*tel
+# Switch: CaLun (-> [the] *Ca*rtel of *Lun*ar Treaty Signatories - 
 ## Alts: LuNet, LyCar + LyNet, DynCar + DyNet (Dynamic Security [provision] Network) -> not bad either :P , 
 	Faction@TriStar:
 		Name: faction-tristar.name
 		InternalName: dh
-		Side: LuCar
+		Side: CaLun
 		Selectable: true
 		Description: faction-tristar.description
     # Original name was: "Haeundae"
@@ -61,7 +62,7 @@
 	Faction@Synapol:
 		Name: faction-synapol.name
 		InternalName: sc
-		Side: LuCar
+		Side: CaLun
 		Selectable: true
 		Description: faction-synapol.description
 ## Random choices of Faction
@@ -78,12 +79,12 @@
 		RandomFactionMembers: mx, yi
 		Side: Random
 		Description: faction-randomcopaxco.description
-	Faction@RandomLuCar:
-		Name: faction-randomlucar.name
-		InternalName: RandomLuCar
+	Faction@RandomCaLun:
+		Name: faction-randomcalun.name
+		InternalName: RandomCaLun
 		RandomFactionMembers: dh, sc
 		Side: Random
-		Description: faction-randomlucar.description
+		Description: faction-randomcalun.description
 
 ## Old note -> comments within actors is fine, comments within traits - prob not :P .
 

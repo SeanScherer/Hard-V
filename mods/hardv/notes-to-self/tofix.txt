@@ -1,0 +1,4 @@
+
+ * FuelDepot:
+	-> sequences/buildings.yaml
+		- flame + flame2 - offsets pretty surely wrong as copied from a building a different size...

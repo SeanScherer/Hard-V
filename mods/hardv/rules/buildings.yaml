@@ -51,10 +51,52 @@ STORAGE:
 GENERATOR:
 	Buildable:
 		BuildPaletteOrder: 13
+		Prerequisites: ~structures.yi
 	Valued:
 		Cost: 60
 
 # Might give Generators a miss mid-to-long term for the Extractive-Corps / CoPaxCo... course, there might be a replacement building... (ordering Mining towers could have a spot here actually... - they need a spot in general ? :P ?! woopsie :P )
+# -- > here we go, first shot at that :P  (Fuel Depots)
+
+FUELDEPOT:
+	Inherits: ^BaseBuilding
+	Inherits@Shape: ^1x1Shape
+	Inherits@Flame: ^BuildingFlame
+	Buildable:
+		Queue: Building
+		Prerequisites: ~structures.sc
+		BuildPaletteOrder: 13
+		Description: actor-fueldepot.description
+	ProvidesPrerequisite@BuildingName:
+	Valued:
+		Cost: 30
+	Selectable:
+		Bounds: 1024, 1024
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+	Tooltip:
+		Name: actor-fueldepot.name
+	Encyclopedia:
+		Description: actor-fueldepot.encyclopedia
+		Order: 90
+		Category: Buildings
+	Health:
+		HP: 20000
+	RenderSprites:
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 4c0
+		MinRange: 2c0
+		RevealGeneratedShroud: False
+	RevealsShroud@Hacked:
+		Range: 2c0
+	Power:
+		Amount: 60
+	Targetable:
+		TargetTypes: Ground, Structure
+	ScalePowerWithHealth:
 
 ##########################################
 ### "Tier 1" / Basic Tech level buildings
@@ -124,14 +166,16 @@ MODULE:
 	Valued:
 		Cost: 100
 
-# MODULE2:
+ MODULE2:
+ 	Buildable:
+		Prerequisites: airsupplypad, ~structures.sc
 #	Production:
 #		Produces: LTMV
 ## Light Terrain Mobile Vehicles
 
 FACTORY:
 	Buildable:
-		Prerequisites: module, generator, ~structures.sc
+		Prerequisites: module, fueldepot, ~structures.sc
 		BuildPaletteOrder: 23
 	Valued:
 		Cost: 200
@@ -247,7 +291,7 @@ WEAPONSFAC:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 33
-		Prerequisites: module, generator, ~structures.sc
+		Prerequisites: module, fueldepot, ~structures.sc
 		Description: actor-weaponsfac.description
 	Encyclopedia:
 		Description: actor-weaponsfac.encyclopedia

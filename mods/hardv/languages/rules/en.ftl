@@ -116,6 +116,11 @@ actor-generator =
 
     Always plan ahead so you don't accidentally power down your base slowing down your progress. On the other hand it can be an effective strategy to destroy enemy power plants to distract the enemy into power micromanagement and to put the enemies production on hold.
 
+actor-fueldepot =
+   .name = Fuel Depot
+   .description = Stores fuel for use in Vehicle and Weapons Assembly lines, and for LTMVs + Armoured vehicles .
+   .encyclopedia = Yada, yada. Keep enough to fuel all your demand needs, or stuff will stop / orders will come to a grinding halt.
+
 actor-module =
    .name = RET-Center
    .description = Outfitting and Training for very light vehicles.

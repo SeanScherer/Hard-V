@@ -6,8 +6,8 @@ flags:
 	Inherits: ^Glyphs
 	Regions:
 		Random: 226, 241, 30, 15
-		RandomCoPaxCo: 226, 241, 30, 15
-		RandomLuCar: 226, 241, 30, 15
+		RandomPaxCo: 226, 241, 30, 15
+		RandomCaLun: 226, 241, 30, 15
 		spectator: 226, 241, 30, 15
 		yi: 226, 209, 30, 15
 		sc: 226, 225, 30, 15

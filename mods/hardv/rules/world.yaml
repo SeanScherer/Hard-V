@@ -26,7 +26,10 @@
 #######################
 # "Factions"
 
+# PAXCO
+#
 ## My First Stab at a Side name was "CoPac"
+## Second stab :P  :
 ## COPAXCO
 ## -> *Co*lonial *Pax*/Pacification *Co*alition
 ## Alts: CoPax, PaxCo, PaCom + PaxCom (strictly speaking Pa[x]Co*M* -> cause Pacification of Colonies, Mutual agreement), 
@@ -34,16 +37,20 @@
 	Faction@Maddock:
 		Name: faction-maddock.name
 		InternalName: mx
-		Side: CoPaxCo
+		Side: PaxCo
 		Selectable: true
 		Description: faction-maddock.description
     ## My initial name for the faction was "Maddox" (might change back)
 	Faction@Yuruki:
 		Name: faction-yuruki.name
 		InternalName: yi
-		Side: CoPaxCo
+		Side: PaxCo
 		Selectable: true
 		Description: faction-yuruki.description
+
+
+# CALUN
+#
 ## First Stab at a Side name: SecFo
 ## Second stab: LUCAR
 ## -> *Lu*na (Security [provision]) *Car*tel
@@ -73,12 +80,12 @@
 		Side: Random
 		Description: faction-randomall.description
 
-	Faction@RandomCoPaxCo:
-		Name: faction-randomcopaxco.name
-		InternalName: RandomCoPaxCo
+	Faction@RandomPaxCo:
+		Name: faction-randompaxco.name
+		InternalName: RandomPaxCo
 		RandomFactionMembers: mx, yi
 		Side: Random
-		Description: faction-randomcopaxco.description
+		Description: faction-randompaxco.description
 	Faction@RandomCaLun:
 		Name: faction-randomcalun.name
 		InternalName: RandomCaLun

@@ -68,10 +68,10 @@ faction-synapol =
         - Grand Howitzer
         - Thermonuclear Bomb
 
-faction-randomcopaxco =
-   .name = CoPaxCo
-   .description = Random CoPaxCo Corporation
-    A random CoPaxCo corporation will be chosen when the game starts.
+faction-randompaxco =
+   .name = PaxCo
+   .description = Random PaxCo Corporation
+    A random PaxCo corporation will be chosen when the game starts.
 
 faction-randomcalun =
    .name = CaLun

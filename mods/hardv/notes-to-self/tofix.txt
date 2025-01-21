@@ -2,3 +2,5 @@
  * FuelDepot:
 	-> sequences/buildings.yaml
 		- flame + flame2 - offsets pretty surely wrong as copied from a building a different size...
+
+ * Rifleman in PaxCo Bunker is not a Rifleman-Tracked :P ! 

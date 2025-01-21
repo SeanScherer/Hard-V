@@ -1,0 +1,60 @@
+# License: CC-BY-SA-4.0
+
+
+# These are used to darken unused slots in the build palette 
+#(ie darken the empty grey squares that are left cause there aren't that many units or buildings that are buildable...)
+
+DUMMY1:
+	Inherits: ^SpriteActor
+	Buildable:
+		Queue: Pod
+		Prerequisites: slotfiller 
+		BuildPaletteOrder: 999
+DUMMY2:
+	Inherits: ^SpriteActor
+	Buildable:
+		Queue: Pod
+		Prerequisites: slotfiller
+		BuildPaletteOrder: 999
+DUMMY3:
+	Inherits: ^SpriteActor
+	Buildable:
+		Queue: Pod
+		Prerequisites: slotfiller
+		BuildPaletteOrder: 999
+DUMMY4:
+	Inherits: ^SpriteActor
+	Buildable:
+		Queue: Pod
+		Prerequisites: slotfiller
+		BuildPaletteOrder: 999
+DUMMY5:
+	Inherits: ^SpriteActor
+	Buildable:
+		Queue: Pod
+		Prerequisites: slotfiller
+		BuildPaletteOrder: 999
+DUMMY6:
+	Inherits: ^SpriteActor
+	Buildable:
+		Queue: Pod
+		Prerequisites: slotfiller
+		BuildPaletteOrder: 999
+DUMMY7:
+	Inherits: ^SpriteActor
+	Buildable:
+		Queue: Pod
+		Prerequisites: slotfiller
+		BuildPaletteOrder: 999
+DUMMY8:
+	Inherits: ^SpriteActor
+	Buildable:
+		Queue: Pod
+		Prerequisites: slotfiller
+		BuildPaletteOrder: 999
+DUMMY9:
+	Inherits: ^SpriteActor
+	Buildable:
+		Queue: Pod
+		Prerequisites: slotfiller
+		BuildPaletteOrder: 999

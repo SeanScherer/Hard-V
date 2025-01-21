@@ -104,9 +104,9 @@ production-icons:
 		defense: 64, 293, 28, 27
 		defense-disabled: 96, 293, 28, 27
 		defense-alert: 128, 293, 28, 27
-		pod: 64, 326, 28, 27
-		pod-disabled: 96, 326, 28, 27
-		pod-alert: 128, 326, 28, 27
+		pod: 64, 357, 28, 27 
+		pod-disabled: 96, 357, 28, 27
+		pod-alert: 128, 357, 28, 27
 		utility: 64, 421, 28, 27
 		utility-disabled: 96, 421, 28, 27
 		utility-alert: 128, 421, 28, 27

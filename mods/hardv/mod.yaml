@@ -183,9 +183,11 @@ ChromeLayout:
 	common|chrome/playerprofile.yaml
 	common|chrome/text-notifications.yaml
 	hv|chrome/ingame-observer.yaml
-	hv|chrome/ingame-player.yaml
+
 	hv|chrome/gamesave-loading.yaml
 	hv|chrome/unused.yaml
+
+	hardv|chrome/ingame-player.yaml
 
 Translations:
 	common|languages/en.ftl
